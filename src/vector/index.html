@@ -24,19 +24,20 @@
     <meta name="theme-color" content="#ffffff">
     <meta property="og:image" content="<%= og_image_url %>" />
     <meta http-equiv="Content-Security-Policy" content="
-        default-src 'none';
-        style-src 'self' 'unsafe-inline' <%= csp_extra_source %>;
-        script-src 'self' 'wasm-unsafe-eval' https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit <%= csp_extra_source %>;
-        img-src * blob: data:;
-        connect-src * blob:;
-        font-src 'self' data: <%= csp_extra_source %>;
-        media-src * blob: data:;
-        child-src * blob: data:;
-        worker-src 'self' blob: <%= csp_extra_source %>;
-        frame-src * blob: data:;
-        form-action 'self' <%= csp_extra_source %>;
-        manifest-src 'self' <%= csp_extra_source %>;
-    ">
+    default-src 'none';
+    style-src 'self' 'unsafe-inline' <%= csp_extra_source %>;
+    script-src 'self' 'wasm-unsafe-eval' https://challenges.cloudflare.com <%= csp_extra_source %>;
+    img-src * blob: data:;
+    connect-src * https://challenges.cloudflare.com blob:;
+    font-src 'self' data: <%= csp_extra_source %>;
+    media-src * blob: data:;
+    child-src https://challenges.cloudflare.com blob: data:;
+    worker-src 'self' blob: <%= csp_extra_source %>;
+    frame-src https://challenges.cloudflare.com blob: data:;
+    form-action 'self' <%= csp_extra_source %>;
+    manifest-src 'self' <%= csp_extra_source %>;
+">
+
     <% for (var i=0; i < htmlWebpackPlugin.files.css.length; i++) {
         var file = htmlWebpackPlugin.files.css[i];
         var match = file.match(/^bundles\/.*?\/theme-(.*)\.css$/);

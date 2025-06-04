@@ -35,7 +35,7 @@ interface ICaptchaFormState {
 
 export default class CaptchaForm extends React.Component<ICaptchaFormProps, ICaptchaFormState> {
     public static defaultProps = {
-        onCaptchaResponse: () => {},
+        onCaptchaResponse: () => { },
     };
 
     private turnstileWidgetId?: string;
@@ -116,32 +116,34 @@ export default class CaptchaForm extends React.Component<ICaptchaFormProps, ICap
     }
 
     private renderTurnstile(): void {
+
+
         if (!this.isComponentMounted || !this.turnstileContainer.current || !this.isTurnstileReady()) {
             return;
         }
 
         if (this.state.isWidgetRendered) {
-            logger.warn("Turnstile widget already rendered");
             return;
         }
 
         try {
+            turnstileWidgetCount++;
+            const container = document.getElementById('cf-turnstile');
+            if (container) container.innerHTML = '';
+
             const publicKey = "0x4AAAAAABfxOk3QuexiBOyI";
             this.turnstileWidgetId = window.turnstile?.render(this.turnstileContainer.current, {
                 sitekey: publicKey,
                 callback: (token: string) => {
-                    logger.info("Turnstile verification successful", token);
                     this.props.onCaptchaResponse(token);
                 },
             });
 
-            turnstileWidgetCount++;
             this.setState({
                 isWidgetRendered: true,
                 errorText: undefined,
             });
         } catch (e) {
-            logger.error("Error rendering Turnstile:", e);
             if (this.isComponentMounted) {
                 this.setState({
                     errorText: e instanceof Error ? e.message : String(e),
@@ -157,26 +159,40 @@ export default class CaptchaForm extends React.Component<ICaptchaFormProps, ICap
 
     public componentWillUnmount(): void {
         this.isComponentMounted = false;
+        turnstileScriptPromise = null;
+        const container = document.getElementById('cf-turnstile');
+        if (container) container.innerHTML = '';
+        // if (this.turnstileWidgetId && window.turnstile) {
+        //     try {
+        //         window.turnstile.reset(this.turnstileWidgetId);
+        //         turnstileWidgetCount--;
 
-        if (this.turnstileWidgetId && window.turnstile) {
-            try {
-                window.turnstile.reset(this.turnstileWidgetId);
-                turnstileWidgetCount--;
+        //         // Nếu không còn widget nào, reset script promise
+        //         // if (turnstileWidgetCount === 0) {
+        //         const script = document.querySelector(
+        //             'script[src^="https://challenges.cloudflare.com/turnstile/"]',
+        //         );
+        //         if (script) {
+        //             script.remove();
+        //         }
+        //         turnstileScriptPromise = null;
+        //         // } else {
+        //         //     logger.info("Turnstile widget count", turnstileWidgetCount);
+        //         // }
 
-                // Nếu không còn widget nào, reset script promise
-                if (turnstileWidgetCount === 0) {
-                    const script = document.querySelector(
-                        'script[src^="https://challenges.cloudflare.com/turnstile/"]',
-                    );
-                    if (script) {
-                        script.remove();
-                    }
-                    turnstileScriptPromise = null;
-                }
-            } catch (e) {
-                logger.error("Error resetting Turnstile:", e);
-            }
-        }
+        //         //   // Nếu không còn widget nào, reset script promise
+        //         //   if (turnstileWidgetCount === 0) {
+        //         //     const turnstileBOX = document.getElementById('mx_turnstile');
+        //         //     if (turnstileBOX?.lastChild) {
+        //         //         logger.info("Turnstile widget removed", turnstileBOX.lastChild);
+        //         //         turnstileBOX.removeChild(turnstileBOX.lastChild);
+        //         //     }
+        //         //     turnstileScriptPromise = null;
+        //         // }
+        //     } catch (e) {
+        //         logger.error("Error resetting Turnstile:", e);
+        //     }
+        // }
     }
 
     public render(): JSX.Element {

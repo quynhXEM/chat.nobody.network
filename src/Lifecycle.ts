@@ -220,9 +220,9 @@ export async function loadSession(opts: ILoadSessionOpts = {}): Promise<boolean>
             return false;
         }
 
-        if (enableGuest && guestHsUrl) {
-            return registerAsGuest(guestHsUrl, guestIsUrl, defaultDeviceDisplayName);
-        }
+        // if (enableGuest && guestHsUrl) {
+        //     return registerAsGuest(guestHsUrl, guestIsUrl, defaultDeviceDisplayName);
+        // }
 
         // fall back to welcome screen
         return false;

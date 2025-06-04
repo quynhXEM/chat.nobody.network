@@ -216,11 +216,6 @@ export class RecaptchaAuthEntry extends React.Component<IRecaptchaAuthEntryProps
             return <Spinner />;
         }
 
-        // If already verified, don't show the form again
-        if (this.state.isVerified) {
-            return;
-        }
-
         let errorText = this.props.errorText;
 
         let sitePublicKey: string | undefined;
