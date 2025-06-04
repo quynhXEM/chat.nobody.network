@@ -103,7 +103,7 @@ export class PasswordAuthEntry extends React.Component<IAuthEntryProps, IPasswor
             password: "",
         };
     }
-
+    
     public componentDidMount(): void {
         this.props.onPhaseChange(DEFAULT_PHASE);
     }
@@ -186,23 +186,39 @@ interface IRecaptchaAuthEntryProps extends IAuthEntryProps {
 }
 /* eslint-enable camelcase */
 
-export class RecaptchaAuthEntry extends React.Component<IRecaptchaAuthEntryProps> {
+export class RecaptchaAuthEntry extends React.Component<IRecaptchaAuthEntryProps, { isVerified: boolean }> {
     public static LOGIN_TYPE = AuthType.Recaptcha;
+
+    public constructor(props: IRecaptchaAuthEntryProps) {
+        super(props);
+        this.state = {
+            isVerified: false
+        };
+    }
 
     public componentDidMount(): void {
         this.props.onPhaseChange(DEFAULT_PHASE);
     }
 
     private onCaptchaResponse = (response: string): void => {
-        this.props.submitAuthDict({
-            type: AuthType.Recaptcha,
-            response: response,
-        });
+        // Only submit if not already verified
+        if (!this.state.isVerified) {
+            this.setState({ isVerified: true });
+            this.props.submitAuthDict({
+                type: AuthType.Recaptcha,
+                response: response,
+            });
+        }
     };
 
     public render(): React.ReactNode {
         if (this.props.busy) {
             return <Spinner />;
+        }
+
+        // If already verified, don't show the form again
+        if (this.state.isVerified) {
+            return;
         }
 
         let errorText = this.props.errorText;
