@@ -4007,7 +4007,7 @@
         "you_are_presenting": "You are presenting"
     },
     "web_default_device_name": "%(appName)s: %(browserName)s on %(osName)s",
-    "welcome_to_element": "Welcome to SOC Connect",
+    "welcome_to_element": "Welcome to Nobody Connect",
     "widget": {
         "added_by": "Widget added by",
         "capabilities_dialog": {

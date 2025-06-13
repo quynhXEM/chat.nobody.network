@@ -1,6 +1,6 @@
 {
-    "name": "SOC Connect",
-    "short_name": "SOC Connect",
+    "name": "Nobody Connect",
+    "short_name": "Nobody Connect",
     "display": "standalone",
     "theme_color": "#76CFA6",
     "start_url": "index.html",

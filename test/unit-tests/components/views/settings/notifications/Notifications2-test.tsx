@@ -69,7 +69,7 @@ describe("<Notifications />", () => {
         cli.getPushers = jest.fn(cli.getPushers).mockResolvedValue({
             pushers: [
                 {
-                    app_display_name: "SOC Connect",
+                    app_display_name: "Nobody Connect",
                     app_id: "im.vector.app",
                     data: {},
                     device_display_name: "My EyeFon",
@@ -589,7 +589,7 @@ describe("<Notifications />", () => {
             cli.getPushers = jest.fn(cli.getPushers).mockResolvedValue({
                 pushers: [
                     {
-                        app_display_name: "SOC Connect",
+                        app_display_name: "Nobody Connect",
                         app_id: "im.vector.app",
                         data: {},
                         device_display_name: "My EyeFon",
@@ -628,7 +628,7 @@ describe("<Notifications />", () => {
                 app_display_name: "Email Notifications",
                 app_id: "m.email",
                 append: true,
-                data: { brand: "SOC Connect" },
+                data: { brand: "Nobody Connect" },
                 device_display_name: "test@example.tld",
                 kind: "email",
                 lang: "en-US",
@@ -640,7 +640,7 @@ describe("<Notifications />", () => {
             cli.getPushers = jest.fn(cli.getPushers).mockResolvedValue({
                 pushers: [
                     {
-                        app_display_name: "SOC Connect",
+                        app_display_name: "Nobody Connect",
                         app_id: "im.vector.app",
                         data: {},
                         device_display_name: "My EyeFon",
@@ -651,7 +651,7 @@ describe("<Notifications />", () => {
                     {
                         app_display_name: "Email Notifications",
                         app_id: "m.email",
-                        data: { brand: "SOC Connect" },
+                        data: { brand: "Nobody Connect" },
                         device_display_name: "test@example.tld",
                         kind: "email",
                         lang: "en-US",

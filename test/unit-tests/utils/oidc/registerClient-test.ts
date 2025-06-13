@@ -17,7 +17,7 @@ import { makeDelegatedAuthConfig } from "../../../test-utils/oidc";
 
 describe("getOidcClientId()", () => {
     const issuer = "https://auth.com/";
-    const clientName = "SOC Connect";
+    const clientName = "Nobody Connect";
     const baseUrl = "https://just.testing";
     const dynamicClientId = "xyz789";
     const staticOidcClients = {

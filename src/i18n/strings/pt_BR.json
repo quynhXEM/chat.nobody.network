@@ -3937,7 +3937,7 @@
         "disabled_no_perms_start_video_call": "Você não tem permissão para iniciar chamadas de vídeo",
         "disabled_no_perms_start_voice_call": "Você não tem permissão para iniciar chamadas de voz",
         "disabled_ongoing_call": "Chamada em andamento",
-        "element_call": "SOC Connect",
+        "element_call": "Nobody Connect",
         "enable_camera": "Ligar câmera",
         "enable_microphone": "Habilitar microfone",
         "expand": "Retornar para a chamada",
@@ -4006,7 +4006,7 @@
         "you_are_presenting": "Você está apresentando"
     },
     "web_default_device_name": "%(appName)s: %(browserName)s em %(osName)s",
-    "welcome_to_element": "Boas-vindas a SOC Connect",
+    "welcome_to_element": "Boas-vindas a Nobody Connect",
     "widget": {
         "added_by": "Widget adicionado por",
         "capabilities_dialog": {

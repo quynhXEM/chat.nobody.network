@@ -1,11 +1,11 @@
 {
     "name": "soc-connect",
     "version": "1.11.101",
-    "description": "SOC Connect: the future of secure communication",
-    "author": "SOC JSC",
+    "description": "Nobody Connect: the future of secure communication",
+    "author": "Nobody Network",
     "repository": {
         "type": "git",
-        "url": "https://github.com/quynhXEM/soc.element"
+        "url": "https://github.com/quynhXEM/chat.nobody.network"
     },
     "license": "SEE LICENSE IN README.md",
     "files": [

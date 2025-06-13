@@ -17,7 +17,7 @@ export default class AuthHeaderLogo extends React.PureComponent {
 
         return (
             <aside className="mx_AuthHeaderLogo">
-                <img src={logoUrl} alt="SOC Connect" />
+                <img src={logoUrl} alt="Nobody Connect" />
             </aside>
         );
     }

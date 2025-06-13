@@ -7,7 +7,7 @@
         "m.identity_server": {
         }
     },
-    "brand": "SOC Connect",
+    "brand": "Nobody Connect",
     
     "bug_report_endpoint_url": "https://element.io/bugreports/submit",
     "uisi_autorageshake_app": "element-auto-uisi",

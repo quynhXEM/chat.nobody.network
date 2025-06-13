@@ -162,7 +162,7 @@ describe("DeviceListener", () => {
 
                 expect(mockClient!.setAccountData).toHaveBeenCalledWith(
                     `io.element.matrix_client_information.${deviceId}`,
-                    { name: "SOC Connect", url: "localhost", version: "1.2.3" },
+                    { name: "Nobody Connect", url: "localhost", version: "1.2.3" },
                 );
             });
 
@@ -192,7 +192,7 @@ describe("DeviceListener", () => {
 
                 expect(mockClient!.setAccountData).toHaveBeenCalledWith(
                     `io.element.matrix_client_information.${deviceId}`,
-                    { name: "SOC Connect", url: "localhost", version: "1.2.3" },
+                    { name: "Nobody Connect", url: "localhost", version: "1.2.3" },
                 );
             });
         });
@@ -256,7 +256,7 @@ describe("DeviceListener", () => {
 
                 expect(mockClient!.setAccountData).toHaveBeenCalledWith(
                     `io.element.matrix_client_information.${deviceId}`,
-                    { name: "SOC Connect", url: "localhost", version: "1.2.3" },
+                    { name: "Nobody Connect", url: "localhost", version: "1.2.3" },
                 );
             });
         });

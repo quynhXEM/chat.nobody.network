@@ -42,7 +42,7 @@ jobs:
         permissions:
             pull-requests: read
         with:
-            hardcoded-words: "SOC Connect"
+            hardcoded-words: "Nobody Connect"
             allowed-hardcoded-keys: |
                 console_dev_note
                 labs|element_call_video_rooms

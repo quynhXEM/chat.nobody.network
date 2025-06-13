@@ -16,7 +16,7 @@ describe("<SearchWarning />", () => {
     describe("with desktop builds available", () => {
         beforeEach(() => {
             SdkConfig.put({
-                brand: "SOC Connect",
+                brand: "Nobody Connect",
                 desktop_builds: {
                     available: true,
                     logo: "https://logo",
