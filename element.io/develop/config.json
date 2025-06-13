@@ -1,0 +1,54 @@
+{
+    "default_server_name": "connect.socjsc.com",
+    "default_server_config": {
+        "m.homeserver": {
+            "base_url": "https://matrix-client.connect.socjsc.com"
+        },
+        "m.identity_server": {
+        }
+    },
+    "brand": "SOC Connect",
+    "bug_report_endpoint_url": "https://element.io/bugreports/submit",
+    "uisi_autorageshake_app": "element-auto-uisi",
+    "show_labs_settings": true,
+    "room_directory": {
+        "servers": ["connect.socjsc.com", "gitter.im"]
+    },
+    "enable_presence_by_hs_url": {
+        "https://connect.socjsc.com": false,
+        "https://matrix-client.connect.socjsc.com": false
+    },
+    "terms_and_conditions_links": [
+        {
+            "url": "https://docs.socjsc.com/docs/terms-privacy/terms-of-service/",
+            "text": "Privacy Policy"
+        },
+        {
+            "url": "https://docs.socjsc.com/docs/terms-privacy/terms-of-service/",
+            "text": "Cookie Policy"
+        }
+    ],
+    "sentry": {
+        "dsn": "https://029a0eb289f942508ae0fb17935bd8c5@sentry.connect.socjsc.com/6",
+        "environment": "develop"
+    },
+    "posthog": {
+        "project_api_key": "phc_Jzsm6DTm6V2705zeU5dcNvQDlonOR68XvX2sh1sEOHO",
+        "api_host": "https://posthog.element.io"
+    },
+    "privacy_policy_url": "https://docs.socjsc.com/docs/terms-privacy/terms-of-service/",
+    "features": {
+        "threadsActivityCentre": true,
+        "feature_video_rooms": true,
+        "feature_group_calls": true,
+        "feature_element_call_video_rooms": true
+    },
+    "setting_defaults": {
+        "RustCrypto.staged_rollout_percent": 100,
+        "Registration.mobileRegistrationHelper": true
+    },
+    "element_call": {
+        "url": "https://call.element.dev"
+    },
+    "map_style_url": "https://api.maptiler.com/maps/streets/style.json?key=fU3vlMsMn4Jb6dnEIFsx"
+}
