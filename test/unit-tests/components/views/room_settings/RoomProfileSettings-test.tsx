@@ -38,7 +38,7 @@ describe("RoomProfileSetting", () => {
 
     it("handles uploading a room avatar", async () => {
         const user = userEvent.setup();
-        mocked(client.uploadContent).mockResolvedValue({ content_uri: "mxc://connect.socjsc.com/1234" });
+        mocked(client.uploadContent).mockResolvedValue({ content_uri: "mxc://nobody.network/1234" });
 
         render(<RoomProfileSettings roomId={ROOM_ID} />);
 
@@ -52,7 +52,7 @@ describe("RoomProfileSetting", () => {
                 ROOM_ID,
                 EventType.RoomAvatar,
                 {
-                    url: "mxc://connect.socjsc.com/1234",
+                    url: "mxc://nobody.network/1234",
                 },
                 "",
             ),
@@ -68,7 +68,7 @@ describe("RoomProfileSetting", () => {
             (type: string): MatrixEvent[] | MatrixEvent | null => {
                 if (type === EventType.RoomAvatar) {
                     // @ts-ignore
-                    return { getContent: () => ({ url: "mxc://connect.socjsc.com/1234" }) };
+                    return { getContent: () => ({ url: "mxc://nobody.network/1234" }) };
                 }
                 return null;
             },

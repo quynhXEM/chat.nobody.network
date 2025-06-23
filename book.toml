@@ -2,7 +2,7 @@
 # https://rust-lang.github.io/mdBook/format/config.html
 [book]
 title = "Element Web & Desktop"
-authors = ["New Vector Ltd.", "The connect.socjsc.com Foundation C.I.C."]
+authors = ["New Vector Ltd.", "The nobody.network Foundation C.I.C."]
 language = "en"
 multilingual = false
 

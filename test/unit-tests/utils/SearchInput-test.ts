@@ -16,8 +16,8 @@ jest.mock("../../../src/stores/widgets/WidgetLayoutStore");
 
 describe("transforming search term", () => {
     it("should return the primaryEntityId if the search term was a permalink", () => {
-        const roomLink = "https://chat.socjsc.com/#/#element-dev:connect.socjsc.com";
-        const parsedPermalink = "#element-dev:connect.socjsc.com";
+        const roomLink = "https://chat.socjsc.com/#/#element-dev:nobody.network";
+        const parsedPermalink = "#element-dev:nobody.network";
 
         mocked(parsePermalink).mockReturnValue({
             primaryEntityId: parsedPermalink,
@@ -31,7 +31,7 @@ describe("transforming search term", () => {
     });
 
     it("should return the original search term if the search term is a permalink and the primaryEntityId is null", () => {
-        const searchTerm = "https://chat.socjsc.com/#/#random-link:connect.socjsc.com";
+        const searchTerm = "https://chat.socjsc.com/#/#random-link:nobody.network";
 
         mocked(parsePermalink).mockReturnValue({
             primaryEntityId: null,

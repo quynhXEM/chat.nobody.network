@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2019 The connect.socjsc.com Foundation C.I.C.
+Copyright 2019 The nobody.network Foundation C.I.C.
 Copyright 2017 New Vector Ltd
 Copyright 2016 OpenMarket Ltd
 

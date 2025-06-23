@@ -160,7 +160,7 @@ strongly encouraged to think about tests early in the process, as adding
 tests later will become progressively more difficult.
 
 If you're not sure how to approach writing tests for your change, ask for help
-in [#element-dev](https://matrix.to/#/#element-dev:connect.socjsc.com).
+in [#element-dev](https://matrix.to/#/#element-dev:nobody.network).
 
 ## Code style
 
@@ -186,7 +186,7 @@ AUTHORS.rst file for the project in question. Please feel free to include a
 change to AUTHORS.rst in your pull request to list yourself and a short
 description of the area(s) you've worked on. Also, we sometimes have swag to
 give away to contributors - if you feel that Matrix-branded apparel is missing
-from your life, please mail us your shipping address to matrix at connect.socjsc.com
+from your life, please mail us your shipping address to matrix at nobody.network
 and we'll try to fix it :)
 
 # Review expectations

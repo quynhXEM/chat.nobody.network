@@ -27,7 +27,7 @@ jest.mock("../../../../../src/components/viewmodels/roomlist/utils", () => ({
 
 describe("RoomListViewModel", () => {
     function mockAndCreateRooms() {
-        const rooms = range(10).map((i) => mkStubRoom(`foo${i}:connect.socjsc.com`, `Foo ${i}`, undefined));
+        const rooms = range(10).map((i) => mkStubRoom(`foo${i}:nobody.network`, `Foo ${i}`, undefined));
         const fn = jest
             .spyOn(RoomListStoreV3.instance, "getSortedRoomsInActiveSpace")
             .mockImplementation(() => [...rooms]);
@@ -52,7 +52,7 @@ describe("RoomListViewModel", () => {
         const { rooms } = mockAndCreateRooms();
         const { result: vm } = renderHook(() => useRoomListViewModel());
 
-        const newRoom = mkStubRoom("bar:connect.socjsc.com", "Bar", undefined);
+        const newRoom = mkStubRoom("bar:nobody.network", "Bar", undefined);
         rooms.push(newRoom);
         await act(() => RoomListStoreV3.instance.emit(LISTS_UPDATE_EVENT));
 
@@ -172,18 +172,18 @@ describe("RoomListViewModel", () => {
         }
 
         it("active index is calculated with the last opened room in a space", () => {
-            // Let's say there's two spaces: !space1:connect.socjsc.com and !space2:connect.socjsc.com
-            // Let's also say that the current active space is !space1:connect.socjsc.com
-            let currentSpace = "!space1:connect.socjsc.com";
+            // Let's say there's two spaces: !space1:nobody.network and !space2:nobody.network
+            // Let's also say that the current active space is !space1:nobody.network
+            let currentSpace = "!space1:nobody.network";
             jest.spyOn(SpaceStore.instance, "activeSpace", "get").mockImplementation(() => currentSpace);
 
-            const rooms = range(10).map((i) => mkStubRoom(`foo${i}:connect.socjsc.com`, `Foo ${i}`, undefined));
+            const rooms = range(10).map((i) => mkStubRoom(`foo${i}:nobody.network`, `Foo ${i}`, undefined));
             // Let's say all the rooms are in space1
             const roomsInSpace1 = [...rooms];
             // Let's say all rooms with even index are in space 2
             const roomsInSpace2 = [...rooms].filter((_, i) => i % 2 === 0);
             jest.spyOn(RoomListStoreV3.instance, "getSortedRoomsInActiveSpace").mockImplementation(() =>
-                currentSpace === "!space1:connect.socjsc.com" ? roomsInSpace1 : roomsInSpace2,
+                currentSpace === "!space1:nobody.network" ? roomsInSpace1 : roomsInSpace2,
             );
 
             // Let's say that the room at index 4 is currently active
@@ -193,8 +193,8 @@ describe("RoomListViewModel", () => {
             const { result: vm } = renderHook(() => useRoomListViewModel());
             expect(vm.current.activeIndex).toEqual(4);
 
-            // Let's say that space is changed to "!space2:connect.socjsc.com"
-            currentSpace = "!space2:connect.socjsc.com";
+            // Let's say that space is changed to "!space2:nobody.network"
+            currentSpace = "!space2:nobody.network";
             // Let's say that room[6] is active in space 2
             const activeRoomIdInSpace2 = rooms[6].roomId;
             jest.spyOn(SpaceStore.instance, "getLastSelectedRoomIdForSpace").mockImplementation(
@@ -228,8 +228,8 @@ describe("RoomListViewModel", () => {
             expectActiveRoom(vm.current, 5, roomId);
 
             // Let's add 2 new rooms from index 0
-            const newRoom1 = mkStubRoom("bar1:connect.socjsc.com", "Bar 1", undefined);
-            const newRoom2 = mkStubRoom("bar2:connect.socjsc.com", "Bar 2", undefined);
+            const newRoom1 = mkStubRoom("bar1:nobody.network", "Bar 1", undefined);
+            const newRoom2 = mkStubRoom("bar2:nobody.network", "Bar 2", undefined);
             rooms.unshift(newRoom1, newRoom2);
             act(() => RoomListStoreV3.instance.emit(LISTS_UPDATE_EVENT));
 

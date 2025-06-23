@@ -1,6 +1,6 @@
 /*
 Copyright 2019-2024 New Vector Ltd.
-Copyright 2019 The connect.socjsc.com Foundation C.I.C.
+Copyright 2019 The nobody.network Foundation C.I.C.
 Copyright 2019 Michael Telatynski <7t3chguy@gmail.com>
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
@@ -105,7 +105,7 @@ const AccountUserSettingsTab: React.FC<IProps> = ({ closeSettingsFn }) => {
 
             await sdkContext.oidcClientStore.readyPromise; // wait for the store to be ready
             const externalAccountManagementUrl = sdkContext.oidcClientStore.accountManagementEndpoint;
-            // https://spec.connect.socjsc.com/v1.7/client-server-api/#m3pid_changes-capability
+            // https://spec.nobody.network/v1.7/client-server-api/#m3pid_changes-capability
             // We support as far back as v1.1 which doesn't have m.3pid_changes
             // so the behaviour for when it is missing has to be assume true
             const canMake3pidChanges =

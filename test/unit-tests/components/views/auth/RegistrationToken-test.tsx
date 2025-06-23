@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2022 The connect.socjsc.com Foundation C.I.C.
+Copyright 2022 The nobody.network Foundation C.I.C.
 Copyright 2022 Callum Brown
 Copyright 2016 OpenMarket Ltd
 

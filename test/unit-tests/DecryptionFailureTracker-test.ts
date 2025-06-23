@@ -647,7 +647,7 @@ describe("DecryptionFailureTracker", function () {
         });
         // event from a local user
         const localDecryption = await createFailedDecryptionEvent({
-            sender: "@bob:connect.socjsc.com",
+            sender: "@bob:nobody.network",
             code: error2,
         });
 

@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2022 The connect.socjsc.com Foundation C.I.C.
+Copyright 2022 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -16,7 +16,7 @@ import { LocationShareError } from "./LocationShareErrors";
 /**
  * Look up what map tile server style URL was provided in the homeserver's
  * .well-known location, or, failing that, in our local config, or, failing
- * that, defaults to the same tile server listed by connect.socjsc.com.
+ * that, defaults to the same tile server listed by nobody.network.
  */
 export function findMapStyleUrl(matrixClient: MatrixClient): string {
     const mapStyleUrl = getTileServerWellKnown(matrixClient)?.map_style_url ?? SdkConfig.get().map_style_url;

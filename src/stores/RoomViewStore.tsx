@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2019-2022 The connect.socjsc.com Foundation C.I.C.
+Copyright 2019-2022 The nobody.network Foundation C.I.C.
 Copyright 2017, 2018 New Vector Ltd
 Copyright 2017 Vector Creations Ltd
 
@@ -211,9 +211,9 @@ export class RoomViewStore extends EventEmitter {
         // eslint-disable-line @typescript-eslint/naming-convention
         switch (payload.action) {
             // view_room:
-            //      - room_alias:   '#somealias:connect.socjsc.com'
-            //      - room_id:      '!roomid123:connect.socjsc.com'
-            //      - event_id:     '$213456782:connect.socjsc.com'
+            //      - room_alias:   '#somealias:nobody.network'
+            //      - room_id:      '!roomid123:nobody.network'
+            //      - event_id:     '$213456782:nobody.network'
             //      - event_offset: 100
             //      - highlighted:  true
             case Action.ViewRoom:

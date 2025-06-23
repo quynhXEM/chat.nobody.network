@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2020, 2021 The connect.socjsc.com Foundation C.I.C.
+Copyright 2020, 2021 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -78,8 +78,8 @@ const ServerPicker: React.FC<IProps> = ({ title, dialogTitle, serverConfig, onSe
     }
 
     let desc;
-    if (serverConfig.hsName === "connect.socjsc.com") {
-        desc = <span className="mx_ServerPicker_desc">{_t("auth|server_picker_description_connect.socjsc.com")}</span>;
+    if (serverConfig.hsName === "nobody.network") {
+        desc = <span className="mx_ServerPicker_desc">{_t("auth|server_picker_description_nobody.network")}</span>;
     }
 
     return (

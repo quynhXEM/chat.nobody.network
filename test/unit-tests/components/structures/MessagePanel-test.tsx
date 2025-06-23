@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2019-2021 , 2022 The connect.socjsc.com Foundation C.I.C.
+Copyright 2019-2021 , 2022 The nobody.network Foundation C.I.C.
 Copyright 2016 OpenMarket Ltd
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial

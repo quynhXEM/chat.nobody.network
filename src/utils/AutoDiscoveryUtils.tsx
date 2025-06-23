@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2019-2021 The connect.socjsc.com Foundation C.I.C.
+Copyright 2019-2021 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -193,7 +193,7 @@ export default class AutoDiscoveryUtils {
 
     /**
      * Validates a server configuration, using a homeserver domain name as input.
-     * @param {string} serverName The homeserver domain name (eg: "connect.socjsc.com") to validate.
+     * @param {string} serverName The homeserver domain name (eg: "nobody.network") to validate.
      * @returns {Promise<ValidatedServerConfig>} Resolves to the validated configuration.
      */
     public static async validateServerName(serverName: string): Promise<ValidatedServerConfig> {

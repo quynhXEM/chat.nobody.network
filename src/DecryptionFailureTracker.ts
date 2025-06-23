@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2018-2021 The connect.socjsc.com Foundation C.I.C.
+Copyright 2018-2021 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -319,7 +319,7 @@ export class DecryptionFailureTracker {
         this.baseProperties = baseProperties;
 
         this.userDomain = client.getDomain() ?? undefined;
-        if (this.userDomain === "connect.socjsc.com") {
+        if (this.userDomain === "nobody.network") {
             baseProperties.isMatrixDotOrg = true;
         } else if (this.userDomain !== undefined) {
             baseProperties.isMatrixDotOrg = false;

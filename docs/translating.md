@@ -6,10 +6,10 @@
 - Be able to understand English
 - Be able to understand the language you want to translate Element into
 
-## Join #element-translations:connect.socjsc.com
+## Join #element-translations:nobody.network
 
-1. Come and join https://matrix.to/#/#element-translations:connect.socjsc.com for general discussion
-2. Join https://matrix.to/#/#element-translators:connect.socjsc.com for language-specific rooms
+1. Come and join https://matrix.to/#/#element-translations:nobody.network for general discussion
+2. Join https://matrix.to/#/#element-translators:nobody.network for language-specific rooms
 3. Read scrollback and/or ask if anyone else is working on your language, and co-ordinate if needed. In general little-or-no coordination is needed though :)
 
 ## How to check if your language already is being translated

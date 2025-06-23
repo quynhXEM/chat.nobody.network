@@ -333,7 +333,7 @@
         "reset_password_title": "Reset your password",
         "server_picker_custom": "Other your server",
         "server_picker_description": "You can use the custom server options to sign into other Decentralised servers by specifying a different your server URL. This allows you to use %(brand)s with an existing Decentralised account on a different your server.",
-        "server_picker_description_connect.socjsc.com": "Join millions for free on the largest public server",
+        "server_picker_description_nobody.network": "Join millions for free on the largest public server",
         "server_picker_dialog_title": "Decide where your account is hosted",
         "server_picker_explainer": "Use your preferred Decentralised your server if you have one, or host your own.",
         "server_picker_failed_validate_homeserver": "Unable to validate your server",

@@ -29,13 +29,13 @@ describe("Wrapper", () => {
     beforeEach(async () => {
         SdkConfig.reset();
         PlatformPeg.set(new WebPlatform());
-        fetchMock.get("https://matrix-client.connect.socjsc.com/_matrix/client/versions", {
+        fetchMock.get("https://matrix-client.nobody.network/_matrix/client/versions", {
             unstable_features: {},
             versions: SERVER_SUPPORTED_MATRIX_VERSIONS,
         });
-        fetchMock.get("https://connect.socjsc.com/.well-known/matrix/client", {
+        fetchMock.get("https://nobody.network/.well-known/matrix/client", {
             "m.homeserver": {
-                base_url: "https://matrix-client.connect.socjsc.com",
+                base_url: "https://matrix-client.nobody.network",
             },
         });
         fetchMock.get("/version", "1.10.13");
@@ -45,7 +45,7 @@ describe("Wrapper", () => {
         SdkConfig.put({
             default_server_config: {
                 "m.homeserver": {
-                    base_url: "https://matrix-client.connect.socjsc.com",
+                    base_url: "https://matrix-client.nobody.network",
                 },
             },
         });

@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2022, 2023 The connect.socjsc.com Foundation C.I.C.
+Copyright 2022, 2023 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -225,7 +225,7 @@ test.describe("Composer", () => {
                 // Open link modal
                 await page.getByRole("button", { name: "Link" }).click();
                 // Fill the link field
-                await page.getByRole("textbox", { name: "Link" }).pressSequentially("https://connect.socjsc.com/");
+                await page.getByRole("textbox", { name: "Link" }).pressSequentially("https://nobody.network/");
                 // Click on save
                 await page.getByRole("button", { name: "Save" }).click();
                 // Send the message
@@ -235,7 +235,7 @@ test.describe("Composer", () => {
                 await expect(page.locator(".mx_EventTile_body a").getByText("my message 0")).toBeVisible();
                 await expect(page.locator(".mx_EventTile_body a")).toHaveAttribute(
                     "href",
-                    new RegExp("https://connect.socjsc.com/"),
+                    new RegExp("https://nobody.network/"),
                 );
             });
         });

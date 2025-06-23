@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2022 The connect.socjsc.com Foundation C.I.C.
+Copyright 2022 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -33,8 +33,8 @@ describe("MatrixClientPeg", () => {
     it("setJustRegisteredUserId", () => {
         stubClient();
         (peg as any).matrixClient = peg.get();
-        peg.setJustRegisteredUserId("@userId:connect.socjsc.com");
-        expect(peg.safeGet().credentials.userId).toBe("@userId:connect.socjsc.com");
+        peg.setJustRegisteredUserId("@userId:nobody.network");
+        expect(peg.safeGet().credentials.userId).toBe("@userId:nobody.network");
         expect(peg.currentUserIsJustRegistered()).toBe(true);
         expect(peg.userRegisteredWithinLastHours(0)).toBe(false);
         expect(peg.userRegisteredWithinLastHours(1)).toBe(true);

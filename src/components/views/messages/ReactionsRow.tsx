@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2019-2021 The connect.socjsc.com Foundation C.I.C.
+Copyright 2019-2021 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -172,7 +172,7 @@ export default class ReactionsRow extends React.PureComponent<IProps, IState> {
                 if (!count) {
                     return null;
                 }
-                // Deduplicate the events as per the spec https://spec.connect.socjsc.com/v1.7/client-server-api/#annotations-client-behaviour
+                // Deduplicate the events as per the spec https://spec.nobody.network/v1.7/client-server-api/#annotations-client-behaviour
                 // This isn't done by the underlying data model as applications may still need access to the whole list of events
                 // for moderation purposes.
                 const deduplicatedEvents = uniqBy([...events], (e) => e.getSender());

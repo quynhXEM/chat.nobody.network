@@ -57,7 +57,7 @@ describe("Login", function () {
         });
         fetchMock.resetBehavior();
         fetchMock.resetHistory();
-        fetchMock.get("https://connect.socjsc.com/_matrix/client/versions", {
+        fetchMock.get("https://nobody.network/_matrix/client/versions", {
             unstable_features: {},
             versions: ["v1.1"],
         });
@@ -73,7 +73,7 @@ describe("Login", function () {
     });
 
     function getRawComponent(
-        hsUrl = "https://connect.socjsc.com",
+        hsUrl = "https://nobody.network",
         isUrl = "",
         delegatedAuthentication?: OidcClientConfig,
     ) {
@@ -193,7 +193,7 @@ describe("Login", function () {
         await waitForElementToBeRemoved(() => screen.queryAllByLabelText("Loading…"));
 
         fireEvent.click(container.querySelector(".mx_SSOButton")!);
-        expect(platform.startSingleSignOn.mock.calls[0][0].baseUrl).toBe("https://connect.socjsc.com");
+        expect(platform.startSingleSignOn.mock.calls[0][0].baseUrl).toBe("https://nobody.network");
 
         fetchMock.get("https://server2/_matrix/client/versions", {
             unstable_features: {},
@@ -328,7 +328,7 @@ describe("Login", function () {
 
     it("should display an error when homeserver fails liveliness check", async () => {
         fetchMock.resetBehavior();
-        fetchMock.get("https://connect.socjsc.com/_matrix/client/versions", {
+        fetchMock.get("https://nobody.network/_matrix/client/versions", {
             status: 0,
         });
         getComponent();
@@ -340,8 +340,8 @@ describe("Login", function () {
 
     it("should reset liveliness error when server config changes", async () => {
         fetchMock.resetBehavior();
-        // connect.socjsc.com is not alive
-        fetchMock.get("https://connect.socjsc.com/_matrix/client/versions", {
+        // nobody.network is not alive
+        fetchMock.get("https://nobody.network/_matrix/client/versions", {
             status: 400,
         });
         // but server2 is
@@ -364,7 +364,7 @@ describe("Login", function () {
     });
 
     describe("OIDC native flow", () => {
-        const hsUrl = "https://connect.socjsc.com";
+        const hsUrl = "https://nobody.network";
         const isUrl ="";
         const issuer = "https://test.com/";
         const delegatedAuth = makeDelegatedAuthConfig(issuer);

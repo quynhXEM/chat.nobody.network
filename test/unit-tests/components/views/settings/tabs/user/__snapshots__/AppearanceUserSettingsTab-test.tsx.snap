@@ -220,7 +220,7 @@ exports[`AppearanceUserSettingsTab should render 1`] = `
                             class="mx_Username_color2 mx_DisambiguatedProfile_displayName"
                             dir="auto"
                           >
-                            @userId:connect.socjsc.com
+                            @userId:nobody.network
                           </span>
                         </div>
                         <div
@@ -233,7 +233,7 @@ exports[`AppearanceUserSettingsTab should render 1`] = `
                             data-type="round"
                             role="presentation"
                             style="--cpd-avatar-size: 30px;"
-                            title="@userId:connect.socjsc.com"
+                            title="@userId:nobody.network"
                           >
                             u
                           </span>
@@ -346,7 +346,7 @@ exports[`AppearanceUserSettingsTab should render 1`] = `
                             class="mx_Username_color2 mx_DisambiguatedProfile_displayName"
                             dir="auto"
                           >
-                            @userId:connect.socjsc.com
+                            @userId:nobody.network
                           </span>
                         </div>
                         <div
@@ -359,7 +359,7 @@ exports[`AppearanceUserSettingsTab should render 1`] = `
                             data-type="round"
                             role="presentation"
                             style="--cpd-avatar-size: 30px;"
-                            title="@userId:connect.socjsc.com"
+                            title="@userId:nobody.network"
                           >
                             u
                           </span>
@@ -472,7 +472,7 @@ exports[`AppearanceUserSettingsTab should render 1`] = `
                             class="mx_Username_color2 mx_DisambiguatedProfile_displayName"
                             dir="auto"
                           >
-                            @userId:connect.socjsc.com
+                            @userId:nobody.network
                           </span>
                         </div>
                         <div
@@ -485,7 +485,7 @@ exports[`AppearanceUserSettingsTab should render 1`] = `
                             data-type="round"
                             role="presentation"
                             style="--cpd-avatar-size: 14px;"
-                            title="@userId:connect.socjsc.com"
+                            title="@userId:nobody.network"
                           >
                             u
                           </span>

@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2023 The connect.socjsc.com Foundation C.I.C.
+Copyright 2023 The nobody.network Foundation C.I.C.
 Copyright 2020 Nurjin Jafar
 Copyright 2020 Nordeck IT + Consulting GmbH.
 

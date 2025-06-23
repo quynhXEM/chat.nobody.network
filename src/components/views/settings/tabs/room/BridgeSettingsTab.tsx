@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2019, 2020 The connect.socjsc.com Foundation C.I.C.
+Copyright 2019, 2020 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -20,7 +20,7 @@ const BRIDGE_EVENT_TYPES = [
     // m.bridge
 ];
 
-const BRIDGES_LINK = "https://connect.socjsc.com/bridges/";
+const BRIDGES_LINK = "https://nobody.network/bridges/";
 
 interface IProps {
     room: Room;

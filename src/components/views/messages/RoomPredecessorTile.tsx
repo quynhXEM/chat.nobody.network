@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2019-2023 The connect.socjsc.com Foundation C.I.C.
+Copyright 2019-2023 The nobody.network Foundation C.I.C.
 Copyright 2018 New Vector Ltd
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
@@ -160,7 +160,7 @@ export const RoomPredecessorTile: React.FC<IProps> = ({ mxEvent, timestamp }) =>
      * The spec says that Room IDs are opaque [1] so this can only ever be a
      * guess. There is no guarantee that this room exists on this server.
      *
-     * [1] https://spec.connect.socjsc.com/v1.5/appendices/#room-ids-and-event-ids
+     * [1] https://spec.nobody.network/v1.5/appendices/#room-ids-and-event-ids
      */
     function guessLinkForRoomId(roomId: string): string | null {
         const serverName = guessServerNameFromRoomId(roomId);
@@ -180,7 +180,7 @@ export const RoomPredecessorTile: React.FC<IProps> = ({ mxEvent, timestamp }) =>
  * The spec says that Room IDs are opaque [1] so this can only ever be a
  * guess. There is no guarantee that this room exists on this server.
  *
- * [1] https://spec.connect.socjsc.com/v1.5/appendices/#room-ids-and-event-ids
+ * [1] https://spec.nobody.network/v1.5/appendices/#room-ids-and-event-ids
  */
 export function guessServerNameFromRoomId(roomId: string): string | null {
     const m = roomId.match(/^[^:]*:(.*)/);

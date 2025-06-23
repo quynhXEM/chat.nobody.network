@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2022 The connect.socjsc.com Foundation C.I.C.
+Copyright 2022 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -281,7 +281,7 @@ describe("SlashCommands", () => {
             expect(command.run(client, roomId, null, undefined).error).toBe(command.getUsage());
         });
 
-        it("should handle connect.socjsc.com permalinks", () => {
+        it("should handle nobody.network permalinks", () => {
             command.run(client, roomId, null, "https://chat.socjsc.com/#/!roomId:server/$eventId");
             expect(dispatcher.dispatch).toHaveBeenCalledWith(
                 expect.objectContaining({

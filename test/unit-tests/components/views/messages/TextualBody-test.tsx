@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2019-2022 The connect.socjsc.com Foundation C.I.C.
+Copyright 2019-2022 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -176,7 +176,7 @@ describe("<TextualBody />", () => {
 
         // If pills were rendered within a Portal/same shadow DOM then it'd be easier to test
         it("linkification get applied correctly into the DOM", () => {
-            const ev = mkRoomTextMessage("Visit https://connect.socjsc.com/");
+            const ev = mkRoomTextMessage("Visit https://nobody.network/");
             const { container } = getComponent({ mxEvent: ev });
             expect(container).toHaveTextContent(ev.getContent().body);
             const content = container.querySelector(".mx_EventTile_body");
@@ -300,11 +300,11 @@ describe("<TextualBody />", () => {
 
         it("linkification is not applied to code blocks", () => {
             const ev = mkFormattedMessage(
-                "Visit `https://connect.socjsc.com/`\n```\nhttps://connect.socjsc.com/\n```",
-                "<p>Visit <code>https://connect.socjsc.com/</code></p>\n<pre>https://connect.socjsc.com/\n</pre>\n",
+                "Visit `https://nobody.network/`\n```\nhttps://nobody.network/\n```",
+                "<p>Visit <code>https://nobody.network/</code></p>\n<pre>https://nobody.network/\n</pre>\n",
             );
             const { container } = getComponent({ mxEvent: ev }, matrixClient);
-            expect(container).toHaveTextContent("Visit https://connect.socjsc.com/ 1https://connect.socjsc.com/");
+            expect(container).toHaveTextContent("Visit https://nobody.network/ 1https://nobody.network/");
             const content = container.querySelector(".mx_EventTile_body");
             expect(content).toMatchSnapshot();
         });
@@ -424,11 +424,11 @@ describe("<TextualBody />", () => {
         });
 
         it("renders url previews correctly", () => {
-            const ev = mkRoomTextMessage("Visit https://connect.socjsc.com/");
+            const ev = mkRoomTextMessage("Visit https://nobody.network/");
             const { container, rerender } = getComponent({ mxEvent: ev, showUrlPreview: true }, matrixClient);
 
             expect(container).toHaveTextContent(ev.getContent().body);
-            expect(container.querySelector("a")).toHaveAttribute("href", "https://connect.socjsc.com/");
+            expect(container.querySelector("a")).toHaveAttribute("href", "https://nobody.network/");
 
             // simulate an event edit and check the transition from the old URL preview to the new one
             const ev2 = mkEvent({
@@ -437,7 +437,7 @@ describe("<TextualBody />", () => {
                 user: "sender",
                 content: {
                     "m.new_content": {
-                        body: "Visit https://connect.socjsc.com/",
+                        body: "Visit https://nobody.network/",
                         msgtype: "m.text",
                     },
                 },
@@ -458,7 +458,7 @@ describe("<TextualBody />", () => {
         });
 
         it("should listen to showUrlPreview change", () => {
-            const ev = mkRoomTextMessage("Visit https://connect.socjsc.com/");
+            const ev = mkRoomTextMessage("Visit https://nobody.network/");
 
             const { container, rerender } = getComponent({ mxEvent: ev, showUrlPreview: false }, matrixClient);
             expect(container.querySelector(".mx_LinkPreviewGroup")).toBeNull();

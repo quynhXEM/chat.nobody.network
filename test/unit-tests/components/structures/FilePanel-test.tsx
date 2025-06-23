@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2024 The connect.socjsc.com Foundation C.I.C.
+Copyright 2024 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -78,7 +78,7 @@ describe("FilePanel", () => {
                 room: room.roomId,
                 content: {
                     body: "hello",
-                    url: "mxc://connect.socjsc.com/1234",
+                    url: "mxc://nobody.network/1234",
                     msgtype: "m.file",
                 },
                 event: true,

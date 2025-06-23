@@ -37,8 +37,8 @@ Then you can deploy it to your cluster with something like `kubectl apply -f my-
         {
             "default_server_config": {
                 "m.homeserver": {
-                    "base_url": "https://matrix-client.connect.socjsc.com",
-                    "server_name": "connect.socjsc.com"
+                    "base_url": "https://matrix-client.nobody.network",
+                    "server_name": "nobody.network"
                 },
                 "m.identity_server": {
                     "base_url": "https://vector.im"
@@ -66,12 +66,12 @@ Then you can deploy it to your cluster with something like `kubectl apply -f my-
             "default_theme": "light",
             "room_directory": {
                 "servers": [
-                        "connect.socjsc.com"
+                        "nobody.network"
                 ]
             },
             "enable_presence_by_hs_url": {
-                "https://connect.socjsc.com": false,
-                "https://matrix-client.connect.socjsc.com": false
+                "https://nobody.network": false,
+                "https://matrix-client.nobody.network": false
             },
             "setting_defaults": {
                 "breadcrumbs": true

@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2019-2023 The connect.socjsc.com Foundation C.I.C.
+Copyright 2019-2023 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -211,7 +211,7 @@ export default class HelpUserSettingsTab extends React.Component<EmptyObject, IS
                             {},
                             {
                                 a: (sub) => (
-                                    <ExternalLink href="https://connect.socjsc.com/security-disclosure-policy/">
+                                    <ExternalLink href="https://nobody.network/security-disclosure-policy/">
                                         {sub}
                                     </ExternalLink>
                                 ),

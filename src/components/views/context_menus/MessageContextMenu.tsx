@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2015-2023 The connect.socjsc.com Foundation C.I.C.
+Copyright 2015-2023 The nobody.network Foundation C.I.C.
 Copyright 2021, 2022 Šimon Brandner <simon.bra.ag@gmail.com>
 Copyright 2019 Michael Telatynski <7t3chguy@gmail.com>
 

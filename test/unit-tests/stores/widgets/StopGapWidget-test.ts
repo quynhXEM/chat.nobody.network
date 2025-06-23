@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2022 The connect.socjsc.com Foundation C.I.C
+Copyright 2022 The nobody.network Foundation C.I.C
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -77,7 +77,7 @@ describe("StopGapWidget", () => {
             return originGetValue(setting);
         });
         expect(widget.embedUrl).toBe(
-            "https://example.org/?user-id=%40userId%3Aconnect.socjsc.com&device-id=ABCDEFGHI&base-url=https%3A%2F%2Fmatrix-client.connect.socjsc.com&theme=my-theme-for-testing&widgetId=test&parentUrl=http%3A%2F%2Flocalhost%2F",
+            "https://example.org/?user-id=%40userId%3Anobody.network&device-id=ABCDEFGHI&base-url=https%3A%2F%2Fmatrix-client.nobody.network&theme=my-theme-for-testing&widgetId=test&parentUrl=http%3A%2F%2Flocalhost%2F",
         );
         spy.mockClear();
     });

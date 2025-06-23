@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2019 The connect.socjsc.com Foundation C.I.C.
+Copyright 2019 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -9,7 +9,7 @@ Please see LICENSE files in the repository root for full details.
 import EditorModel from "../../../src/editor/model";
 import { createPartCreator, createRenderer } from "./mock";
 
-const pillChannel = "#riot-dev:connect.socjsc.com";
+const pillChannel = "#riot-dev:nobody.network";
 
 describe("editor/range", function () {
     it("range on empty model", function () {

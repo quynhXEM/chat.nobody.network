@@ -222,7 +222,7 @@
                     {
                         "kind": "event_match",
                         "key": "state_key",
-                        "pattern": "@jannetestuser:beta.connect.socjsc.com"
+                        "pattern": "@jannetestuser:beta.nobody.network"
                     }
                 ],
                 "actions": [
@@ -260,7 +260,7 @@
                     {
                         "kind": "event_property_contains",
                         "key": "content.m\\.mentions.user_ids",
-                        "value": "@jannetestuser:beta.connect.socjsc.com"
+                        "value": "@jannetestuser:beta.nobody.network"
                     }
                 ],
                 "actions": [

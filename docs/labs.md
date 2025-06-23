@@ -2,7 +2,7 @@
 
 If Labs is enabled in the [Element config](config.md), you can enable some of these features by going
 to `Settings->Labs`. This list is non-exhaustive and subject to change, chat in
-[#element-web:connect.socjsc.com](https://matrix.to/#/#element-web:connect.socjsc.com) for more information.
+[#element-web:nobody.network](https://matrix.to/#/#element-web:nobody.network) for more information.
 
 If a labs features gets more stable, it _may_ be promoted to a beta feature
 (see [Betas](https://github.com/element-hq/element-web/blob/develop/docs/betas.md)).

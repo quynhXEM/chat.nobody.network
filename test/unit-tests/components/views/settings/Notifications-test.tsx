@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2022, 2023 The connect.socjsc.com Foundation C.I.C.
+Copyright 2022, 2023 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -146,7 +146,7 @@ const pushRules: IPushRules = {
         room: [
             {
                 actions: [PushRuleActionName.DontNotify],
-                rule_id: "!zJPyWqpMorfCcWObge:connect.socjsc.com",
+                rule_id: "!zJPyWqpMorfCcWObge:nobody.network",
                 default: false,
                 enabled: true,
             },
@@ -184,7 +184,7 @@ const pushRules: IPushRules = {
                 conditions: [
                     { kind: ConditionKind.EventMatch, key: "type", pattern: "m.room.member" },
                     { kind: ConditionKind.EventMatch, key: "content.membership", pattern: "invite" },
-                    { kind: ConditionKind.EventMatch, key: "state_key", pattern: "@kadev1:connect.socjsc.com" },
+                    { kind: ConditionKind.EventMatch, key: "state_key", pattern: "@kadev1:nobody.network" },
                 ],
                 actions: [
                     PushRuleActionName.Notify,

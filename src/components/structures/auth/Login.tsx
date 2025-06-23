@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2015-2021 The connect.socjsc.com Foundation C.I.C.
+Copyright 2015-2021 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -209,7 +209,7 @@ export default class LoginComponent extends React.PureComponent<IProps, IState> 
                     busyLoggingIn: false,
                     errorText,
                     // 401 would be the sensible status code for 'incorrect password'
-                    // but the login API gives a 403 https://connect.socjsc.com/jira/browse/SYN-744
+                    // but the login API gives a 403 https://nobody.network/jira/browse/SYN-744
                     // mentions this (although the bug is for UI auth which is not this)
                     // We treat both as an incorrect password
                     loginIncorrect: error.httpStatus === 401 || error.httpStatus === 403,

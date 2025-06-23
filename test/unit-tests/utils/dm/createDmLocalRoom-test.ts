@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2022 The connect.socjsc.com Foundation C.I.C.
+Copyright 2022 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -37,7 +37,7 @@ function assertLocalRoom(room: LocalRoom, targets: Member[], encrypted: boolean)
     expect(roomCreateEvent.getContent()["room_version"]).toBe(KNOWN_SAFE_ROOM_VERSION);
 
     // check that the user and all targets are joined
-    expect(room.getMember("@userId:connect.socjsc.com")?.membership).toBe(KnownMembership.Join);
+    expect(room.getMember("@userId:nobody.network")?.membership).toBe(KnownMembership.Join);
     targets.forEach((target: Member) => {
         expect(room.getMember(target.userId)?.membership).toBe(KnownMembership.Join);
     });

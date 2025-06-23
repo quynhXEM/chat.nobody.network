@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2023 The connect.socjsc.com Foundation C.I.C.
+Copyright 2023 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -20,8 +20,8 @@ const SERVER_SUPPORTED_MATRIX_VERSIONS = ["v1.1", "v1.5", "v1.6", "v1.8", "v1.9"
 
 describe("<ServerPickerDialog />", () => {
     const defaultServerConfig = {
-        hsUrl: "https://connect.socjsc.com",
-        hsName: "connect.socjsc.com",
+        hsUrl: "https://nobody.network",
+        hsName: "nobody.network",
         hsNameIsDifferent: true,
         isUrl: "https://is.org",
         isDefault: true,

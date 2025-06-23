@@ -90,7 +90,7 @@ exports[`<LayoutSwitcher /> should render 1`] = `
                     data-type="round"
                     role="presentation"
                     style="--cpd-avatar-size: 30px;"
-                    title="@userId:connect.socjsc.com"
+                    title="@userId:nobody.network"
                   >
                     A
                   </span>
@@ -216,7 +216,7 @@ exports[`<LayoutSwitcher /> should render 1`] = `
                     data-type="round"
                     role="presentation"
                     style="--cpd-avatar-size: 30px;"
-                    title="@userId:connect.socjsc.com"
+                    title="@userId:nobody.network"
                   >
                     A
                   </span>
@@ -342,7 +342,7 @@ exports[`<LayoutSwitcher /> should render 1`] = `
                     data-type="round"
                     role="presentation"
                     style="--cpd-avatar-size: 14px;"
-                    title="@userId:connect.socjsc.com"
+                    title="@userId:nobody.network"
                   >
                     A
                   </span>

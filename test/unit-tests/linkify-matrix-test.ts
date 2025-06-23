@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2021 The connect.socjsc.com Foundation C.I.C.
+Copyright 2021 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -121,14 +121,14 @@ describe("linkify-matrix", () => {
                 ]);
             });
         });
-        it("properly parses " + char + "_foonetic_xkcd:connect.socjsc.com", () => {
-            const test = "" + char + "_foonetic_xkcd:connect.socjsc.com";
+        it("properly parses " + char + "_foonetic_xkcd:nobody.network", () => {
+            const test = "" + char + "_foonetic_xkcd:nobody.network";
             const found = linkify.find(test);
             expect(found).toEqual([
                 {
-                    href: char + "_foonetic_xkcd:connect.socjsc.com",
+                    href: char + "_foonetic_xkcd:nobody.network",
                     type,
-                    value: char + "_foonetic_xkcd:connect.socjsc.com",
+                    value: char + "_foonetic_xkcd:nobody.network",
                     start: 0,
                     end: test.length,
                     isLink: true,
@@ -347,7 +347,7 @@ describe("linkify-matrix", () => {
         genTests("@");
 
         it("allows dots in localparts", () => {
-            const test = "@test.:connect.socjsc.com";
+            const test = "@test.:nobody.network";
             const found = linkify.find(test);
             expect(found).toEqual([
                 {
@@ -406,7 +406,7 @@ describe("linkify-matrix", () => {
     });
 
     describe("matrix-prefixed domains", () => {
-        const acceptedDomains = ["connect.socjsc.com"];
+        const acceptedDomains = ["nobody.network"];
         for (const domain of acceptedDomains) {
             it("accepts " + domain, () => {
                 const test = domain;

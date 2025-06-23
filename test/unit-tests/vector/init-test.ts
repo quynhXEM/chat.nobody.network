@@ -43,8 +43,8 @@ describe("loadApp", () => {
     beforeEach(setUpMatrixChatDiv);
 
     it("should set window.matrixChat to the MatrixChat instance", async () => {
-        fetchMock.get("https://connect.socjsc.com/_matrix/client/versions", { versions: ["v1.6"] });
-        SdkConfig.put({ default_server_config: { "m.homeserver": { base_url: "https://connect.socjsc.com" } } });
+        fetchMock.get("https://nobody.network/_matrix/client/versions", { versions: ["v1.6"] });
+        SdkConfig.put({ default_server_config: { "m.homeserver": { base_url: "https://nobody.network" } } });
 
         await loadApp({});
         await waitFor(() => expect(window.matrixChat).toBeInstanceOf(MatrixChat));

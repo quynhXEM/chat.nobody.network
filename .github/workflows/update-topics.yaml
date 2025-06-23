@@ -26,8 +26,8 @@ jobs:
               env:
                   HS_URL: ${{ secrets.BETABOT_HS_URL }}
                   LOBBY_ROOM_ID: ${{ secrets.ROOM_ID }}
-                  PUBLIC_ROOM_ID: "!YTvKGNlinIzlkMTVRl:connect.socjsc.com"
-                  ANNOUNCEMENT_ROOM_ID: "!bijaLdadorKgNGtHdA:connect.socjsc.com"
+                  PUBLIC_ROOM_ID: "!YTvKGNlinIzlkMTVRl:nobody.network"
+                  ANNOUNCEMENT_ROOM_ID: "!bijaLdadorKgNGtHdA:nobody.network"
                   TOKEN: ${{ secrets.BETABOT_ACCESS_TOKEN }}
                   RELEASE_STATUS: "Release status: ${{ inputs.expected_status }} expected ${{ inputs.expected_date }}"
               with:

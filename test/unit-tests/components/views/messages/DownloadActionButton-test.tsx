@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2024 The connect.socjsc.com Foundation C.I.C.
+Copyright 2024 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -23,10 +23,10 @@ describe("DownloadActionButton", () => {
         const cli = stubClient();
         // eslint-disable-next-line no-restricted-properties
         mocked(cli.mxcUrlToHttp).mockImplementation(
-            (mxc) => `https://connect.socjsc.com/_matrix/media/r0/download/${mxc.slice(6)}`,
+            (mxc) => `https://nobody.network/_matrix/media/r0/download/${mxc.slice(6)}`,
         );
 
-        fetchMockJest.get("https://connect.socjsc.com/_matrix/media/r0/download/connect.socjsc.com/1234", {
+        fetchMockJest.get("https://nobody.network/_matrix/media/r0/download/nobody.network/1234", {
             status: 404,
             body: { errcode: "M_NOT_FOUND", error: "Not found" },
         });
@@ -38,7 +38,7 @@ describe("DownloadActionButton", () => {
             content: {
                 body: "test",
                 msgtype: "m.image",
-                url: "mxc://connect.socjsc.com/1234",
+                url: "mxc://nobody.network/1234",
             },
         });
         const mediaEventHelper = new MediaEventHelper(event);

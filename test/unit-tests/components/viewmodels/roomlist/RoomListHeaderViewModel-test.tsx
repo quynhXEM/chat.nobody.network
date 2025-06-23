@@ -207,7 +207,7 @@ describe("useRoomListHeaderViewModel", () => {
 
     describe("Sorting", () => {
         function mockAndCreateRooms() {
-            const rooms = range(10).map((i) => mkStubRoom(`foo${i}:connect.socjsc.com`, `Foo ${i}`, undefined));
+            const rooms = range(10).map((i) => mkStubRoom(`foo${i}:nobody.network`, `Foo ${i}`, undefined));
             const fn = jest
                 .spyOn(RoomListStoreV3.instance, "getSortedRoomsInActiveSpace")
                 .mockImplementation(() => [...rooms]);

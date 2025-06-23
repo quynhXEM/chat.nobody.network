@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2024 The connect.socjsc.com Foundation C.I.C.
+Copyright 2024 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -39,11 +39,11 @@ describe("ShareDialog", () => {
         return render(<ShareDialog target={target} onFinished={jest.fn()} />, withClientContextRenderOptions(client));
     }
 
-    const getUrl = () => new URL("https://connect.socjsc.com/");
+    const getUrl = () => new URL("https://nobody.network/");
     const getRoomMember = () => new RoomMember(room.roomId, "@alice:example.org");
 
     test.each([
-        { name: "an URL", title: "Share Link", url: "https://connect.socjsc.com/", getTarget: getUrl },
+        { name: "an URL", title: "Share Link", url: "https://nobody.network/", getTarget: getUrl },
         {
             name: "a room member",
             title: "Share User",

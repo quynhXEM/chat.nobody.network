@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2015-2024 The connect.socjsc.com Foundation C.I.C.
+Copyright 2015-2024 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -1802,7 +1802,7 @@ export default class MatrixChat extends React.PureComponent<IProps, IState> {
                 threepidInvite = invites.find((invite) => invite.roomId === roomString);
             }
 
-            // on our URLs there might be a ?via=connect.socjsc.com or similar to help
+            // on our URLs there might be a ?via=nobody.network or similar to help
             // joins to the room succeed. We'll pass these through as an array
             // to other levels. If there's just one ?via= then params.via is a
             // single string. If someone does something like ?via=one.com&via=two.com

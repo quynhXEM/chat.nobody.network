@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2022 The connect.socjsc.com Foundation C.I.C.
+Copyright 2022 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -21,7 +21,7 @@ import { stubClient } from "../../../../test-utils/test-utils";
 import { mkThread } from "../../../../test-utils/threads";
 
 describe("ThreadListContextMenu", () => {
-    const ROOM_ID = "!123:connect.socjsc.com";
+    const ROOM_ID = "!123:nobody.network";
 
     let room: Room;
     let mockClient: MatrixClient;

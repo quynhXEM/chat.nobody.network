@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2016-2021 The connect.socjsc.com Foundation C.I.C.
+Copyright 2016-2021 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -139,7 +139,7 @@ export default class MultiInviter {
             } else if (member?.membership === KnownMembership.Ban) {
                 let proceed = false;
                 // Check if we can unban the invitee.
-                // See https://spec.connect.socjsc.com/v1.7/rooms/v10/#authorization-rules, particularly 4.5.3 and 4.5.4.
+                // See https://spec.nobody.network/v1.7/rooms/v10/#authorization-rules, particularly 4.5.3 and 4.5.4.
                 const ourMember = room.getMember(this.matrixClient.getSafeUserId());
                 if (
                     !!ourMember &&

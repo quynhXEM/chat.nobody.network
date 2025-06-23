@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2023 The connect.socjsc.com Foundation C.I.C.
+Copyright 2023 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -32,10 +32,10 @@ describe("<RoomTopic/>", () => {
      */
     function createRoom(topic: string) {
         stubClient();
-        const room = new Room("!pMBteVpcoJRdCJxDmn:connect.socjsc.com", MatrixClientPeg.safeGet(), "@alice:example.org");
+        const room = new Room("!pMBteVpcoJRdCJxDmn:nobody.network", MatrixClientPeg.safeGet(), "@alice:example.org");
         const topicEvent = mkEvent({
             type: "m.room.topic",
-            room: "!pMBteVpcoJRdCJxDmn:connect.socjsc.com",
+            room: "!pMBteVpcoJRdCJxDmn:nobody.network",
             user: "@alice:example.org",
             content: { topic },
             ts: 123,
@@ -67,16 +67,16 @@ describe("<RoomTopic/>", () => {
 
     it("should capture permalink clicks", () => {
         const permalink =
-            "https://chat.socjsc.com/#/!pMBteVpcoJRdCJxDmn:connect.socjsc.com/$K4Kg0fL-GKpW1EQ6lS36bP4eUXadWJFkdK_FH73Df8A?via=connect.socjsc.com";
+            "https://chat.socjsc.com/#/!pMBteVpcoJRdCJxDmn:nobody.network/$K4Kg0fL-GKpW1EQ6lS36bP4eUXadWJFkdK_FH73Df8A?via=nobody.network";
         const expectedHref =
-            "http://localhost/#/room/!pMBteVpcoJRdCJxDmn:connect.socjsc.com/$K4Kg0fL-GKpW1EQ6lS36bP4eUXadWJFkdK_FH73Df8A?via=connect.socjsc.com";
+            "http://localhost/#/room/!pMBteVpcoJRdCJxDmn:nobody.network/$K4Kg0fL-GKpW1EQ6lS36bP4eUXadWJFkdK_FH73Df8A?via=nobody.network";
         runClickTest(`... ${permalink} ...`, permalink);
         expect(window.location.href).toEqual(expectedHref);
         expect(dis.fire).toHaveBeenCalledTimes(0);
     });
 
     it("should not capture non-permalink clicks", () => {
-        const link = "https://connect.socjsc.com";
+        const link = "https://nobody.network";
         const expectedHref = originalHref;
         runClickTest(`... ${link} ...`, link);
         expect(window.location.href).toEqual(expectedHref);
@@ -99,7 +99,7 @@ describe("<RoomTopic/>", () => {
     });
 
     it("should not open the tooltip when hovering a link", async () => {
-        const topic = "https://connect.socjsc.com";
+        const topic = "https://nobody.network";
         renderRoom(topic);
         await userEvent.hover(screen.getByText(topic));
         await waitFor(() => expect(screen.queryByRole("tooltip", { name: "Click to read topic" })).toBeNull());

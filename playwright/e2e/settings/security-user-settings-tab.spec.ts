@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2024 The connect.socjsc.com Foundation C.I.C.
+Copyright 2024 The nobody.network Foundation C.I.C.
 Copyright 2023 Suguru Hirahara
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial

@@ -1,6 +1,6 @@
 /*
 Copyright 2024, 2025 New Vector Ltd.
-Copyright 2024 The connect.socjsc.com Foundation C.I.C.
+Copyright 2024 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -128,7 +128,7 @@ export const transformTags: NonNullable<IOptions["transformTags"]> = {
 
 export const sanitizeHtmlParams: IOptions = {
     allowedTags: [
-        // These tags are suggested by the spec https://spec.connect.socjsc.com/v1.10/client-server-api/#mroommessage-msgtypes
+        // These tags are suggested by the spec https://spec.nobody.network/v1.10/client-server-api/#mroommessage-msgtypes
         "font", // custom to matrix for IRC-style font coloring
         "del", // for markdown
         "s",

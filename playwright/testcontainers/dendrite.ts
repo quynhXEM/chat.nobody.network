@@ -29,7 +29,7 @@ const DEFAULT_CONFIG = {
         },
         well_known_server_name: "",
         well_known_client_name: "",
-        trusted_third_party_id_servers: ["connect.socjsc.com"],
+        trusted_third_party_id_servers: ["nobody.network"],
         disable_federation: false,
         presence: {
             enable_inbound: false,
@@ -37,7 +37,7 @@ const DEFAULT_CONFIG = {
         },
         report_stats: {
             enabled: false,
-            endpoint: "https://connect.socjsc.com/report-usage-stats/push",
+            endpoint: "https://nobody.network/report-usage-stats/push",
         },
         server_notices: {
             enabled: false,
@@ -95,7 +95,7 @@ const DEFAULT_CONFIG = {
         disable_http_keepalives: false,
         key_perspectives: [
             {
-                server_name: "connect.socjsc.com",
+                server_name: "nobody.network",
                 keys: [
                     {
                         key_id: "ed25519:auto",

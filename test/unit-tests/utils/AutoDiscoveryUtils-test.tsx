@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2023 The connect.socjsc.com Foundation C.I.C.
+Copyright 2023 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -45,14 +45,14 @@ describe("AutoDiscoveryUtils", () => {
         const validHsConfig = {
             "m.homeserver": {
                 state: AutoDiscoveryAction.SUCCESS,
-                base_url: "https://connect.socjsc.com",
+                base_url: "https://nobody.network",
             },
         };
 
         const expectedValidatedConfig = {
             hsName: serverName,
             hsNameIsDifferent: true,
-            hsUrl: "https://connect.socjsc.com",
+            hsUrl: "https://nobody.network",
             isDefault: false,
             isNameResolvable: true,
             isUrl: "identity.com",
@@ -163,7 +163,7 @@ describe("AutoDiscoveryUtils", () => {
             await expect(AutoDiscoveryUtils.buildValidatedConfigFromDiscovery("", discoveryResult)).resolves.toEqual({
                 ...expectedValidatedConfig,
                 hsNameIsDifferent: false,
-                hsName: "connect.socjsc.com",
+                hsName: "nobody.network",
                 warning: null,
             });
         });
@@ -211,7 +211,7 @@ describe("AutoDiscoveryUtils", () => {
                 "m.homeserver": {
                     state: AutoDiscoveryAction.FAIL_ERROR,
                     error: AutoDiscovery.ERROR_UNSUPPORTED_HOMESERVER_SPEC_VERSION,
-                    base_url: "https://connect.socjsc.com",
+                    base_url: "https://nobody.network",
                 },
             };
             const syntaxOnly = true;
@@ -223,7 +223,7 @@ describe("AutoDiscoveryUtils", () => {
         });
 
         it("should validate delegated oidc auth", async () => {
-            const issuer = "https://auth.connect.socjsc.com/";
+            const issuer = "https://auth.nobody.network/";
             fetchMock.get(
                 `${validHsConfig["m.homeserver"].base_url}/_matrix/client/unstable/org.matrix.msc2965/auth_issuer`,
                 {
@@ -363,11 +363,11 @@ describe("AutoDiscoveryUtils", () => {
                         "org.matrix.session_end",
                         "org.matrix.cross_signing_reset",
                     ],
-                    account_management_uri: "https://auth.connect.socjsc.com/account/",
-                    authorization_endpoint: "https://auth.connect.socjsc.com/auth",
-                    registration_endpoint: "https://auth.connect.socjsc.com/registration",
+                    account_management_uri: "https://auth.nobody.network/account/",
+                    authorization_endpoint: "https://auth.nobody.network/auth",
+                    registration_endpoint: "https://auth.nobody.network/registration",
                     signingKeys: [],
-                    token_endpoint: "https://auth.connect.socjsc.com/token",
+                    token_endpoint: "https://auth.nobody.network/token",
                 }),
                 warning: null,
             });

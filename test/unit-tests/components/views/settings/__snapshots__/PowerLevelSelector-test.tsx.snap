@@ -21,8 +21,8 @@ exports[`PowerLevelSelector should display only the current user 1`] = `
         <select
           data-testid="power-level-select-element"
           id="mx_Field_4"
-          label="@userId:connect.socjsc.com"
-          placeholder="@userId:connect.socjsc.com"
+          label="@userId:nobody.network"
+          placeholder="@userId:nobody.network"
           type="text"
         >
           <option
@@ -53,7 +53,7 @@ exports[`PowerLevelSelector should display only the current user 1`] = `
         <label
           for="mx_Field_4"
         >
-          @userId:connect.socjsc.com
+          @userId:nobody.network
         </label>
       </div>
     </div>
@@ -183,8 +183,8 @@ exports[`PowerLevelSelector should render 1`] = `
         <select
           data-testid="power-level-select-element"
           id="mx_Field_3"
-          label="@userId:connect.socjsc.com"
-          placeholder="@userId:connect.socjsc.com"
+          label="@userId:nobody.network"
+          placeholder="@userId:nobody.network"
           type="text"
         >
           <option
@@ -215,7 +215,7 @@ exports[`PowerLevelSelector should render 1`] = `
         <label
           for="mx_Field_3"
         >
-          @userId:connect.socjsc.com
+          @userId:nobody.network
         </label>
       </div>
     </div>

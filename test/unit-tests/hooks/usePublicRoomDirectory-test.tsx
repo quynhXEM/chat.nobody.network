@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2022 The connect.socjsc.com Foundation C.I.C.
+Copyright 2022 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -24,7 +24,7 @@ describe("usePublicRoomDirectory", () => {
         stubClient();
         cli = MatrixClientPeg.safeGet();
 
-        cli.getDomain = () => "connect.socjsc.com";
+        cli.getDomain = () => "nobody.network";
         cli.getThirdpartyProtocols = () => Promise.resolve({});
         cli.publicRooms = ({ filter }: IRoomDirectoryOptions) => {
             const chunk = [

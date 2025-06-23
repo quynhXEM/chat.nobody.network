@@ -14,7 +14,7 @@ configuration options depending on if you're hitting e.g. `app1.example.com` or 
 in any way, it either entirely uses the domain config, or entirely uses `config.json`.
 
 The possible configuration options are described here. If you run into issues, please visit
-[#element-web:connect.socjsc.com](https://matrix.to/#/#element-web:connect.socjsc.com) on Matrix.
+[#element-web:nobody.network](https://matrix.to/#/#element-web:nobody.network) on Matrix.
 
 For a good example of a production-tuned config, see https://app.element.io/config.json
 
@@ -32,13 +32,13 @@ config.
 One of the following options **must** be supplied:
 
 1. `default_server_config`: The preferred method of setting the homeserver connection information. Simply copy/paste
-   your [`/.well-known/matrix/client`](https://spec.connect.socjsc.com/latest/client-server-api/#getwell-knownmatrixclient)
+   your [`/.well-known/matrix/client`](https://spec.nobody.network/latest/client-server-api/#getwell-knownmatrixclient)
    into this field. For example:
     ```json
     {
         "default_server_config": {
             "m.homeserver": {
-                "base_url": "https://matrix-client.connect.socjsc.com"
+                "base_url": "https://matrix-client.nobody.network"
             },
             "m.identity_server": {
                 "base_url": "https://vector.im"
@@ -48,7 +48,7 @@ One of the following options **must** be supplied:
     ```
 2. `default_server_name`: A different method of connecting to the homeserver by looking up the connection information
    using `.well-known`. When using this option, simply use your server's domain name (the part at the end of user IDs):
-   `"default_server_name": "connect.socjsc.com"`
+   `"default_server_name": "nobody.network"`
 3. <del>`default_hs_url` and (optionally) `default_is_url`</del>: A very deprecated method of defining the connection
    information. These are the same values seen as `base_url` in the `default_server_config` example, with `default_is_url`
    being optional.
@@ -94,7 +94,7 @@ instance. As of writing those settings are not fully documented, however a few a
     ```json
     {
         "room_directory": {
-            "servers": ["connect.socjsc.com", "example.org"]
+            "servers": ["nobody.network", "example.org"]
         }
     }
     ```
@@ -503,8 +503,8 @@ set this value to the following at a minimum:
 ```json
 {
     "enable_presence_by_hs_url": {
-        "https://connect.socjsc.com": false,
-        "https://matrix-client.connect.socjsc.com": false
+        "https://nobody.network": false,
+        "https://matrix-client.nobody.network": false
     }
 }
 ```
@@ -533,7 +533,7 @@ user to set an identity server first when attempting to use features that
 require one.
 
 Currently, the only two public identity servers are https://vector.im and
-https://connect.socjsc.com, however in the future identity servers will be
+https://nobody.network, however in the future identity servers will be
 decentralised.
 
 ## Desktop app configuration

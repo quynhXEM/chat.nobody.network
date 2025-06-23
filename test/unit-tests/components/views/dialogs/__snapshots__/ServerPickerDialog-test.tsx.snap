@@ -31,7 +31,7 @@ exports[`<ServerPickerDialog /> should render dialog 1`] = `
       <p>
         We call the places where you can host your account 'homeservers'.
          
-        connect.socjsc.com is the biggest public homeserver in the world, so it's a good place for many.
+        nobody.network is the biggest public homeserver in the world, so it's a good place for many.
       </p>
       <label
         class="mx_StyledRadioButton mx_StyledRadioButton_enabled"
@@ -54,7 +54,7 @@ exports[`<ServerPickerDialog /> should render dialog 1`] = `
             class="mx_Login_underlinedServerName"
             tabindex="0"
           >
-            connect.socjsc.com
+            nobody.network
           </span>
         </div>
         <div
@@ -116,7 +116,7 @@ exports[`<ServerPickerDialog /> should render dialog 1`] = `
       </h2>
       <a
         class="mx_ExternalLink"
-        href="https://connect.socjsc.com/docs/matrix-concepts/elements-of-matrix/#homeserver"
+        href="https://nobody.network/docs/matrix-concepts/elements-of-matrix/#homeserver"
         rel="noreferrer noopener"
         target="_blank"
       >

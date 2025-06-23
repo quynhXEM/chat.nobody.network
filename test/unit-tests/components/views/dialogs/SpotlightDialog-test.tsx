@@ -1,6 +1,6 @@
 /*
 Copyright 2024 New Vector Ltd.
-Copyright 2022, 2023 The connect.socjsc.com Foundation C.I.C.
+Copyright 2022, 2023 The nobody.network Foundation C.I.C.
 
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
@@ -125,13 +125,13 @@ function mockClient({
 
 describe("Spotlight Dialog", () => {
     const testPerson: IUserChunkMember = {
-        user_id: "@janedoe:connect.socjsc.com",
+        user_id: "@janedoe:nobody.network",
         display_name: "Jane Doe",
         avatar_url: undefined,
     };
 
     const testPublicRoom: IPublicRoomsChunkRoom = {
-        room_id: "!room247:connect.socjsc.com",
+        room_id: "!room247:nobody.network",
         name: "Room #247",
         topic: "We hope you'll have a <b>shining</b> experience!",
         world_readable: false,
@@ -140,7 +140,7 @@ describe("Spotlight Dialog", () => {
     };
 
     const testDMRoomId = "!testDM:example.com";
-    const testDMUserId = "@alice:connect.socjsc.com";
+    const testDMUserId = "@alice:nobody.network";
 
     let testRoom: Room;
     let testDM: Room;
@@ -393,8 +393,8 @@ describe("Spotlight Dialog", () => {
         mocked(testRoom.getJoinedMembers).mockReturnValue([member]);
         mocked(mockedClient.searchUserDirectory).mockResolvedValue({
             results: [
-                { user_id: "@janedoe:connect.socjsc.com", display_name: "User Alpha", avatar_url: "mxc://1/avatar" },
-                { user_id: "@johndoe:connect.socjsc.com", display_name: "User Beta", avatar_url: "mxc://2/avatar" },
+                { user_id: "@janedoe:nobody.network", display_name: "User Alpha", avatar_url: "mxc://1/avatar" },
+                { user_id: "@johndoe:nobody.network", display_name: "User Beta", avatar_url: "mxc://2/avatar" },
             ],
             limited: false,
         });
@@ -417,7 +417,7 @@ describe("Spotlight Dialog", () => {
         mocked(mockedClient.searchUserDirectory).mockResolvedValue({
             results: [
                 { user_id: testDMUserId, display_name: "Alice Wonder", avatar_url: "mxc://1/avatar" },
-                { user_id: "@bob:connect.socjsc.com", display_name: "Bob Wonder", avatar_url: "mxc://2/avatar" },
+                { user_id: "@bob:nobody.network", display_name: "Bob Wonder", avatar_url: "mxc://2/avatar" },
             ],
             limited: false,
         });
@@ -515,7 +515,7 @@ describe("Spotlight Dialog", () => {
 
     describe("nsfw public rooms filter", () => {
         const nsfwNameRoom: IPublicRoomsChunkRoom = {
-            room_id: "@room1:connect.socjsc.com",
+            room_id: "@room1:nobody.network",
             name: "Room 1 [NSFW]",
             topic: undefined,
             world_readable: false,
@@ -524,7 +524,7 @@ describe("Spotlight Dialog", () => {
         };
 
         const nsfwTopicRoom: IPublicRoomsChunkRoom = {
-            room_id: "@room2:connect.socjsc.com",
+            room_id: "@room2:nobody.network",
             name: "Room 2",
             topic: "A room with a topic that includes nsfw",
             world_readable: false,
@@ -533,7 +533,7 @@ describe("Spotlight Dialog", () => {
         };
 
         const potatoRoom: IPublicRoomsChunkRoom = {
-            room_id: "@room3:connect.socjsc.com",
+            room_id: "@room3:nobody.network",
             name: "Potato Room 3",
             topic: "Room where we discuss potatoes",
             world_readable: false,

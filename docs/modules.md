@@ -47,5 +47,5 @@ The following requirements are key for any module:
 Both `RuntimeModule` and `ModuleApi` have extensive documentation to describe what is proper usage and how to set things
 up.
 
-If you have any questions then please visit [#element-dev:connect.socjsc.com](https://matrix.to/#/#element-dev:connect.socjsc.com) on
+If you have any questions then please visit [#element-dev:nobody.network](https://matrix.to/#/#element-dev:nobody.network) on
 Matrix and we'll help as best we can.

@@ -51,7 +51,7 @@ describe("RoomSkipList", () => {
         expect(skipList.size).toEqual(totalRooms);
         const sortedRooms = [...skipList];
         for (let i = 0; i < totalRooms; ++i) {
-            expect(sortedRooms[i].roomId).toEqual(`!foo${totalRooms - i - 1}:connect.socjsc.com`);
+            expect(sortedRooms[i].roomId).toEqual(`!foo${totalRooms - i - 1}:nobody.network`);
         }
     });
 
@@ -68,7 +68,7 @@ describe("RoomSkipList", () => {
         // Sorting order should be the same as before
         const sortedRooms = [...skipList];
         for (let i = 0; i < totalRooms; ++i) {
-            expect(sortedRooms[i].roomId).toEqual(`!foo${totalRooms - i - 1}:connect.socjsc.com`);
+            expect(sortedRooms[i].roomId).toEqual(`!foo${totalRooms - i - 1}:nobody.network`);
         }
     });
 
@@ -79,7 +79,7 @@ describe("RoomSkipList", () => {
             const room = rooms[i];
             const event = mkMessage({
                 room: room.roomId,
-                user: `@foo${i}:connect.socjsc.com`,
+                user: `@foo${i}:nobody.network`,
                 ts: totalRooms - i,
                 event: true,
             });
@@ -89,7 +89,7 @@ describe("RoomSkipList", () => {
         }
         const sortedRooms = [...skipList];
         for (let i = 0; i < totalRooms; ++i) {
-            expect(sortedRooms[i].roomId).toEqual(`!foo${i}:connect.socjsc.com`);
+            expect(sortedRooms[i].roomId).toEqual(`!foo${i}:nobody.network`);
         }
     });
 
@@ -132,7 +132,7 @@ describe("RoomSkipList", () => {
             expect(roomSkipList.size).toEqual(totalRooms);
             const sortedRooms = [...roomSkipList];
             for (let i = 0; i < totalRooms; ++i) {
-                expect(sortedRooms[i].roomId).toEqual(`!foo${totalRooms - i - 1}:connect.socjsc.com`);
+                expect(sortedRooms[i].roomId).toEqual(`!foo${totalRooms - i - 1}:nobody.network`);
             }
         });
 
