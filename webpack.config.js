@@ -619,18 +619,18 @@ module.exports = (env, argv) => {
             // }),
 
             // These are the static error pages for when the javascript env is *really unsupported*
-            new HtmlWebpackPlugin({
-                template: "./src/vector/static/unable-to-load.html",
-                filename: "static/unable-to-load.html",
-                minify: false,
-                chunks: [],
-            }),
-            new HtmlWebpackPlugin({
-                template: "./src/vector/static/incompatible-browser.html",
-                filename: "static/incompatible-browser.html",
-                minify: false,
-                chunks: [],
-            }),
+            // new HtmlWebpackPlugin({
+            //     template: "./src/vector/static/unable-to-load.html",
+            //     filename: "static/unable-to-load.html",
+            //     minify: false,
+            //     chunks: [],
+            // }),
+            // new HtmlWebpackPlugin({
+            //     template: "./src/vector/static/incompatible-browser.html",
+            //     filename: "static/incompatible-browser.html",
+            //     minify: false,
+            //     chunks: [],
+            // }),
 
             // This is the usercontent sandbox's entry point (separate for iframing)
             new HtmlWebpackPlugin({

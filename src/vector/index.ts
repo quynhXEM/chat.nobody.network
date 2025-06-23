@@ -253,7 +253,7 @@ start().catch((err) => {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore - typescript seems to only like the IE syntax for iframe sandboxing
     iframe["sandbox"] = "";
-    iframe.src = supportedBrowser ? "static/unable-to-load.html" : "static/incompatible-browser.html";
+    // iframe.src = supportedBrowser ? "static/unable-to-load.html" : "static/incompatible-browser.html";
     iframe.style.width = "100%";
     iframe.style.height = "100%";
     iframe.style.position = "absolute";
