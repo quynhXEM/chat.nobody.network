@@ -3556,7 +3556,8 @@
             "copy_link_thread": "Копіювати посилання на гілку",
             "expand_reply_chain": "Розгорнути цитати",
             "label": "Дії з повідомленням",
-            "view_in_room": "Дивитися в кімнаті"
+            "view_in_room": "Дивитися в кімнаті",
+            "action_no_disable": "Ви впевнені, що хочете видалити цей розділ? Ця дія не може бути скасована."
         },
         "message_timestamp_received_at": "Отримано: %(dateTime)s",
         "message_timestamp_sent_at": "Надіслано: %(dateTime)s",

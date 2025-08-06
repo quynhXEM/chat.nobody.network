@@ -3055,7 +3055,8 @@
             "copy_link_thread": "Kopēt saiti uz pavedienu",
             "expand_reply_chain": "Izvērst citātus",
             "label": "Darbības ar ziņu",
-            "view_in_room": "Skats istabā"
+            "view_in_room": "Skats istabā",
+            "action_no_disable": "Vai tiešām vēlaties dzēst šo pavedienu? Šī darbība nevar tikt atgriezta."
         },
         "mjolnir": {
             "changed_rule_glob": "%(senderName)s pārjaunoja lieguma noteikumu šablonu %(oldGlob)s uz šablonu %(newGlob)s dēļ %(reason)s",

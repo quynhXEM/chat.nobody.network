@@ -3465,7 +3465,8 @@
             "copy_link_thread": "Bağlantıyı konuya kopyala",
             "expand_reply_chain": "Alıntıları genişlet",
             "label": "Mesaj Eylemleri",
-            "view_in_room": "Odada görüntüle"
+            "view_in_room": "Odada görüntüle",
+            "action_no_disable": "Bu konuyu gerçekten silmek istiyor musunuz? Bu işlem geri alınamaz."
         },
         "message_timestamp_received_at": "%(dateTime)s alındı",
         "message_timestamp_sent_at": "Gönderildi: %(dateTime)s",

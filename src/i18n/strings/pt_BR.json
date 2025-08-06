@@ -3565,7 +3565,8 @@
             "copy_link_thread": "Copiar ligação para o tópico",
             "expand_reply_chain": "Expandir citações",
             "label": "Ações da mensagem",
-            "view_in_room": "Ver na sala"
+            "view_in_room": "Ver na sala",
+            "action_no_disable": "Tem certeza de que deseja excluir este tópico? Esta ação não pode ser desfeita."
         },
         "message_timestamp_received_at": "Recebido em: %(dateTime)s",
         "message_timestamp_sent_at": "Enviado em: %(dateTime)s",

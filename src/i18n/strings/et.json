@@ -3566,7 +3566,8 @@
             "copy_link_thread": "Kopeeri jutulõnga link",
             "expand_reply_chain": "Näita viidatud sisu",
             "label": "Tegevused sõnumitega",
-            "view_in_room": "Vaata jututoas"
+            "view_in_room": "Vaata jututoas",
+            "action_no_disable": "Kas oled kindel, et soovid seda jutulõngu kustutada? Seda tegevust ei saa tagastada."
         },
         "message_timestamp_received_at": "Saabumise aeg: %(dateTime)s",
         "message_timestamp_sent_at": "Saatmise aeg: %(dateTime)s",

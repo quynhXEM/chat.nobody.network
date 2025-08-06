@@ -3107,7 +3107,8 @@
             "copy_link_thread": "Kopioi linkki ketjuun",
             "expand_reply_chain": "Laajenna lainaukset",
             "label": "Viestitoiminnot",
-            "view_in_room": "Näytä huoneessa"
+            "view_in_room": "Näytä huoneessa",
+            "action_no_disable": "Oletko varma, että haluat poistaa tämän ketjun? Tätä toimintoa ei voi perua."
         },
         "message_timestamp_received_at": "Vastaanotettu: %(dateTime)s",
         "message_timestamp_sent_at": "Lähetetty: %(dateTime)s",

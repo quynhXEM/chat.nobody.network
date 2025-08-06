@@ -2831,7 +2831,8 @@
         "mab": {
             "copy_link_thread": "Sao chép liên kết vào chủ đề",
             "label": "Hành động tin nhắn",
-            "view_in_room": "Xem phòng này"
+            "view_in_room": "Xem phòng này",
+            "action_no_disable": "Bạn có chắc chắn muốn xóa đoạn chủ đề này không? Hành động này không thể hoàn tác."
         },
         "mjolnir": {
             "changed_rule_glob": "%(senderName)s đã cập nhật quy tắc cấm khớp %(oldGlob)s sang %(newGlob)s cho %(reason)s",

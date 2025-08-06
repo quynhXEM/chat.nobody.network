@@ -2862,7 +2862,8 @@
             "copy_link_thread": "スレッドへのリンクをコピー",
             "expand_reply_chain": "引用を展開",
             "label": "メッセージのアクション",
-            "view_in_room": "ルーム内で表示"
+            "view_in_room": "ルーム内で表示",
+            "action_no_disable": "このスレッドを本当に削除しますか？この操作は元に戻せません。"
         },
         "mjolnir": {
             "changed_rule_glob": "%(senderName)sが、%(oldGlob)sにマッチするブロック用ルールを、%(newGlob)sにマッチするブロック用ルールに更新しました（理由：%(reason)s）",

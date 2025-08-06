@@ -2544,7 +2544,8 @@
             "copy_link_thread": "ສຳເນົາລິ້ງໃສ່ກະທູ້",
             "expand_reply_chain": "ຂະຫຍາຍວົງຢືມ",
             "label": "ການດຳເນີນການທາງຂໍ້ຄວາມ",
-            "view_in_room": "ເບິ່ງຢູ່ໃນຫ້ອງ"
+            "view_in_room": "ເບິ່ງຢູ່ໃນຫ້ອງ",
+            "action_no_disable": "ທ່ານຕ້ອງການລຶບກະທູ້ນີ້ບໍ່? ການດຳເນີນການນີ້ບໍ່ສາມາດຢ້ານກັບໄດ້."
         },
         "mjolnir": {
             "changed_rule_glob": "%(senderName)s ອັບເດດກົດລະບຽບການຫ້າມຈັບຄູ່ກັນ %(oldGlob)s ການຈັບຄູ່ກັນ%(newGlob)s ສໍາລັບ %(reason)s",

@@ -3563,7 +3563,8 @@
             "copy_link_thread": "Link zu Thread kopieren",
             "expand_reply_chain": "Zitate ausklappen",
             "label": "Nachrichtenaktionen",
-            "view_in_room": "Im Raum anzeigen"
+            "view_in_room": "Im Raum anzeigen",
+            "action_no_disable": "Soll das Thread wirklich gelöscht werden? Diese Aktion kann nicht rückgängig gemacht werden."
         },
         "message_timestamp_received_at": "Empfangen am: %(dateTime)s",
         "message_timestamp_sent_at": "Gesendet am: %(dateTime)s",

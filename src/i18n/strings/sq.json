@@ -2929,7 +2929,8 @@
             "copy_link_thread": "Kopjoje lidhjen te rrjedha",
             "expand_reply_chain": "Zgjeroji thonjëzat",
             "label": "Veprime Mesazhesh",
-            "view_in_room": "Shiheni në dhomë"
+            "view_in_room": "Shiheni në dhomë",
+            "action_no_disable": "Je sigur që dëshironi të fshihet kjo thonjëzë? Ky veprim nuk mund të kthehet."
         },
         "mjolnir": {
             "changed_rule_glob": "%(senderName)s përditësoi një rregull dëbimesh mbi përputhje me %(oldGlob)s për përputhje me %(newGlob)s për %(reason)s",

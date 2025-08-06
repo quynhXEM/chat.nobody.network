@@ -2571,7 +2571,8 @@
             "copy_link_thread": "Afrita tengil á spjallþráð",
             "expand_reply_chain": "Fletta út tilvitnunum",
             "label": "Aðgerðir skilaboða",
-            "view_in_room": "Skoða á spjallrás"
+            "view_in_room": "Skoða á spjallrás",
+            "action_no_disable": "Ertu viss um að þú viljir eyða þessu spjallþráði? Þessi aðgerð er ekki aðgengileg."
         },
         "mjolnir": {
             "changed_rule_glob": "%(senderName)s uppfærði bannreglu sem samsvarar %(oldGlob)s yfir í að samsvara %(glob)s, vegna %(reason)s",

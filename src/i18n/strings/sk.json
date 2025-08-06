@@ -3609,7 +3609,8 @@
             "copy_link_thread": "Kopírovať odkaz na vlákno",
             "expand_reply_chain": "Rozbaliť citácie",
             "label": "Akcie správy",
-            "view_in_room": "Zobraziť v miestnosti"
+            "view_in_room": "Zobraziť v miestnosti",
+            "action_no_disable": "Naozaj chcete odstrániť toto vlákno? Táto akcia sa nedá vrátiť."
         },
         "message_timestamp_received_at": "Prijaté: %(dateTime)s",
         "message_timestamp_sent_at": "Odoslané:%(dateTime)s",

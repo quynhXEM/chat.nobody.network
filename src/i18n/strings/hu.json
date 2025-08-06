@@ -3537,7 +3537,8 @@
             "copy_link_thread": "Hivatkozás másolása az üzenetszálba",
             "expand_reply_chain": "Idézetek megjelenítése",
             "label": "Üzenetműveletek",
-            "view_in_room": "Megjelenítés szobában"
+            "view_in_room": "Megjelenítés szobában",
+            "action_no_disable": "Biztosan törölni akarod ezt a hivatkozást? Ez a művelet nem vonható vissza."
         },
         "message_timestamp_received_at": "Érkezett: %(dateTime)s",
         "message_timestamp_sent_at": "Elküldve:%(dateTime)s",

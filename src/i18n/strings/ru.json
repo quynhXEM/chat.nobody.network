@@ -3355,7 +3355,8 @@
             "copy_link_thread": "Копировать ссылку на обсуждение",
             "expand_reply_chain": "Развернуть цитаты",
             "label": "Сообщение действий",
-            "view_in_room": "Просмотреть в комнате"
+            "view_in_room": "Просмотреть в комнате",
+            "action_no_disable": "Вы уверены, что хотите удалить этот разговор? Это действие не может быть отменено."
         },
         "message_timestamp_received_at": "Получено в: %(dateTime)s",
         "message_timestamp_sent_at": "Отправлено в: %(dateTime)s",

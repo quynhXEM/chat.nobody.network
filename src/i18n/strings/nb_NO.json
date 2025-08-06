@@ -3565,7 +3565,8 @@
             "copy_link_thread": "Kopier lenke til tråd",
             "expand_reply_chain": "Utvid sitater",
             "label": "Meldingshandlinger",
-            "view_in_room": "Vis i rom"
+            "view_in_room": "Vis i rom",
+            "action_no_disable": "Er du sikker på at du vil slette denne tråden? Denne handlingen kan ikke angres."
         },
         "message_timestamp_received_at": "Mottatt den: %(dateTime)s",
         "message_timestamp_sent_at": "Sendt den: %(dateTime)s",

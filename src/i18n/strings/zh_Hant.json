@@ -3054,7 +3054,8 @@
             "copy_link_thread": "複製討論串連結",
             "expand_reply_chain": "展開引號",
             "label": "訊息動作",
-            "view_in_room": "在聊天室中檢視"
+            "view_in_room": "在聊天室中檢視",
+            "action_no_disable": "您確定要刪除此討論串嗎？此操作無法撤銷。"
         },
         "mjolnir": {
             "changed_rule_glob": "%(senderName)s 將封鎖符合 %(oldGlob)s 的規則更新為 %(newGlob)s，因為 %(reason)s",

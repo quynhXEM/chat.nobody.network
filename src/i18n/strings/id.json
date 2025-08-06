@@ -3558,7 +3558,8 @@
             "copy_link_thread": "Salin tautan ke utasan",
             "expand_reply_chain": "Buka kutip",
             "label": "Aksi Pesan",
-            "view_in_room": "Tampilkan di ruangan"
+            "view_in_room": "Tampilkan di ruangan",
+            "action_no_disable": "Apakah Anda yakin ingin menghapus utasan ini? Tindakan ini tidak dapat dibatalkan."
         },
         "message_timestamp_received_at": "Diterima pada: %(dateTime)s",
         "message_timestamp_sent_at": "Dikirim pada: %(dateTime)s",

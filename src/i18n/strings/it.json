@@ -3128,7 +3128,8 @@
             "copy_link_thread": "Copia link nella conversazione",
             "expand_reply_chain": "Espandi le citazioni",
             "label": "Azioni messaggio",
-            "view_in_room": "Vedi nella stanza"
+            "view_in_room": "Vedi nella stanza",
+            "action_no_disable": ""
         },
         "message_timestamp_received_at": "Ricevuto il: %(dateTime)s",
         "message_timestamp_sent_at": "Inviato il: %(dateTime)s",

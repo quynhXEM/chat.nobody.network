@@ -2799,7 +2799,8 @@
             "copy_link_thread": "复制到消息列的链接",
             "expand_reply_chain": "展开引号",
             "label": "消息操作",
-            "view_in_room": "在房间内查看"
+            "view_in_room": "在房间内查看",
+            "action_no_disable": "你确定要删除这个线程吗？此操作无法撤销。"
         },
         "mjolnir": {
             "changed_rule_glob": "%(senderName)s 更新了一个由于%(reason)s而禁止%(oldGlob)s跟%(newGlob)s匹配的规则",

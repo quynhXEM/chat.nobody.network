@@ -3109,7 +3109,8 @@
             "copy_link_thread": "Adikao ny rohy mankany amin'ny kofehy",
             "expand_reply_chain": "Hanitatra ny teny nindramina",
             "label": "Asa atao amin'ny hafatra",
-            "view_in_room": "Jereo ao amin'ny"
+            "view_in_room": "Jereo ao amin'ny",
+            "action_no_disable": "Tsy nahomby ny fandefasana"
         },
         "message_timestamp_received_at": "Voaray tamin'ny:%(dateTime)s",
         "message_timestamp_sent_at": "Nalefa tamin'ny:%(dateTime)s",

@@ -2148,7 +2148,8 @@
         },
         "mab": {
             "copy_link_thread": "העתק קישור לשרשור",
-            "label": "פעולות הודעה"
+            "label": "פעולות הודעה",
+            "action_no_disable": "האם אתה בטוח שברצונך למחוק את השרשור הזה? פעולה זו אינה ניתנת לביטול."
         },
         "mjolnir": {
             "changed_rule_glob": "%(senderName)s עדכן כלל חסימה אשר תאם ל%(oldGlob)s ל%(newGlob)s עבור %(reason)s",

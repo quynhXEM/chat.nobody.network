@@ -2282,7 +2282,8 @@
             "removed": "Fenestraĵon %(widgetName)s forigis %(senderName)s"
         },
         "mab": {
-            "label": "Mesaĝaj agoj"
+            "label": "Mesaĝaj agoj",
+            "action_no_disable": "Ĉu vi certas, ke vi volas forigi ĉi tiun okazon? Ĉi tiu ago ne povas esti malfatigita."
         },
         "mjolnir": {
             "changed_rule_glob": "%(senderName)s ĝisdatigis forbaran regulon, kiu akordis kun %(oldGlob)s, al akordo kun %(newGlob)s, pro %(reason)s",

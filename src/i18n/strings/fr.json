@@ -3563,7 +3563,8 @@
             "copy_link_thread": "Copier le lien du fil de discussion",
             "expand_reply_chain": "Étendre les citations",
             "label": "Actions de message",
-            "view_in_room": "Voir dans le salon"
+            "view_in_room": "Voir dans le salon",
+            "action_no_disable": "Êtes-vous sûr de vouloir supprimer ce fil de discussion ? Cette action ne peut pas être annulée."
         },
         "message_timestamp_received_at": "Reçu à : %(dateTime)s",
         "message_timestamp_sent_at": "Envoyé à : %(dateTime)s",

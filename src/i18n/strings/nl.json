@@ -2693,7 +2693,8 @@
             "copy_link_thread": "Kopieer link naar draad",
             "expand_reply_chain": "Citaten uitvouwen",
             "label": "Berichtacties",
-            "view_in_room": "In kamer bekijken"
+            "view_in_room": "In kamer bekijken",
+            "action_no_disable": "Weet je zeker dat je deze draad wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt."
         },
         "mjolnir": {
             "changed_rule_glob": "%(senderName)s heeft het patroon van een banregel wegens %(reason)s aangepast van %(oldGlob)s tot %(newGlob)s",

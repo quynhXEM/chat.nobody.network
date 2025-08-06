@@ -3378,7 +3378,8 @@
             "copy_link_thread": "Copïo dolen i'r edefyn",
             "expand_reply_chain": "Ehangu dyfyniadau",
             "label": "Camau Gweithredu Neges",
-            "view_in_room": "Golwg yn yr ystafell"
+            "view_in_room": "Golwg yn yr ystafell",
+            "action_no_disable": "Ydych chi'n siŵr eich bod am ddileu'r edefyn hon? Nid yw'r cam hwn yn gallu adael."
         },
         "message_timestamp_received_at": "Derbyniwyd am: %(dateTime)s",
         "message_timestamp_sent_at": "Anfonwyd am: %(dateTime)s",

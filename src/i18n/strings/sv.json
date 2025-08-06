@@ -3539,7 +3539,8 @@
             "copy_link_thread": "Kopiera länk till tråd",
             "expand_reply_chain": "Expandera citat",
             "label": "Meddelandeåtgärder",
-            "view_in_room": "Visa i rum"
+            "view_in_room": "Visa i rum",
+            "action_no_disable": "Är du säker på att du vill ta bort den här tråden? Den här åtgärden kan inte ångras."
         },
         "message_timestamp_received_at": "Mottagen vid: %(dateTime)s",
         "message_timestamp_sent_at": "Skickat vid: %(dateTime)s",
