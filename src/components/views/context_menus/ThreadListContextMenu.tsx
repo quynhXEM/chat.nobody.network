@@ -88,14 +88,14 @@ const ThreadListContextMenu: React.FC<ThreadListContextMenuProps> = ({
                 if (thread) {
                     // Modal xác nhận
                     Modal.createDialog(BaseDialog, {
-                        title: `${_t("action|clear")} ${_t("common|thread")}`,
+                        title: `${_t("action|delete")} ${_t("common|thread")}`,
                         className: "mx_ConfirmDeleteThreadDialog",
                         contentId: "mx_ConfirmDeleteThreadDialog_content",
                         children: (
                             <div>
                                 <p>{_t("timeline|mab|action_no_disable")}</p>
                                 <DialogButtons
-                                    primaryButton={_t("action|clear")}
+                                    primaryButton={_t("action|delete")}
                                     primaryButtonClass="danger"
                                     onPrimaryButtonClick={async () => {
                                         // Lấy tất cả event con (không bao gồm event gốc)
@@ -171,7 +171,7 @@ const ThreadListContextMenu: React.FC<ThreadListContextMenuProps> = ({
                             className="mx_IconizedContextMenu_itemDestructive"
                             data-testid="remove-thread"
                             onClick={(e) => removeThread(e)}
-                            label={_t("action|clear")}
+                            label={_t("action|delete")}
                             iconClassName="mx_ThreadPanel_removeThread"
                         />
                     </IconizedContextMenuOptionList>
