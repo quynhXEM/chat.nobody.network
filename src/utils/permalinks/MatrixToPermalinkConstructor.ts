@@ -8,7 +8,7 @@ Please see LICENSE files in the repository root for full details.
 
 import PermalinkConstructor, { PermalinkParts } from "./PermalinkConstructor";
 
-export const host = "chat.socjsc.com";
+export const host = "join.chat.socjsc.com";
 export const baseUrl = `https://${host}`;
 export const baseUrlPattern = `^(?:https?://)?${host.replace(".", "\\.")}/#/(.*)`;
 

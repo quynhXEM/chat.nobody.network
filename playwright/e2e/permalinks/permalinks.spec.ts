@@ -13,7 +13,7 @@ import { Bot } from "../../pages/bot";
 const room1Name = "Room 1";
 const room2Name = "Room 2";
 const unknownRoomAlias = "#unknownroom:example.com";
-const permalinkPrefix = "https://chat.socjsc.com/#/";
+const permalinkPrefix = "https://join.chat.socjsc.com/#/";
 
 const getPill = (locator: Locator, label: string) => {
     return locator.locator(".mx_Pill_text", { hasText: new RegExp("^" + label + "$", "g") });

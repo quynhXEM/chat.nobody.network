@@ -1357,7 +1357,7 @@ test.describe("Timeline", () => {
                 msgtype: "m.text",
                 body: user.userId,
                 format: "org.matrix.custom.html",
-                formatted_body: `<span data-mx-spoiler>https://chat.socjsc.com/#/${user.userId}</span>`,
+                formatted_body: `<span data-mx-spoiler>https://join.chat.socjsc.com/#/${user.userId}</span>`,
             });
 
             const screenshotOptions = {

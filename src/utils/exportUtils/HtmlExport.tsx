@@ -102,7 +102,7 @@ export default class HTMLExporter extends Exporter {
                         roomName: () => <strong>{safeRoomName}</strong>,
                         exporterDetails: () => (
                             <a
-                                href={`https://chat.socjsc.com/#/${encodeURIComponent(exporter)}`}
+                                href={`https://join.chat.socjsc.com/#/${encodeURIComponent(exporter)}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
