@@ -90,7 +90,7 @@ function PresenceDecoration({ presence }: PresenceDecorationProps): JSX.Element 
                     width="8px"
                     height="8px"
                     className="mx_RoomAvatarView_PresenceDecoration"
-                    color="var(--cpd-color-icon-accent-primary)"
+                    color="var(--cpd-color-text-link-external)"
                     aria-label={_t("presence|online")}
                 />
             );

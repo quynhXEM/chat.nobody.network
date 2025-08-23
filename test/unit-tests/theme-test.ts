@@ -120,8 +120,8 @@ describe("theme", () => {
                 {
                     name: "blue",
                     compound: {
-                        "--cpd-color-icon-accent-tertiary": "var(--cpd-color-blue-800)",
-                        "--cpd-color-text-action-accent": "var(--cpd-color-blue-900)",
+                        "--cpd-color-text-link-external": "var(--cpd-color-blue-800)",
+                        "--cpd-color-text-link-external": "var(--cpd-color-blue-900)",
                     },
                 },
             ]);

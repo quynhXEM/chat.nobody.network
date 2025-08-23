@@ -69,9 +69,9 @@ export function NotificationDecoration({
             data-testid="notification-decoration"
         >
             {isUnsentMessage && <ErrorIcon width="20px" height="20px" fill="var(--cpd-color-icon-critical-primary)" />}
-            {hasVideoCall && <VideoCallIcon width="20px" height="20px" fill="var(--cpd-color-icon-accent-primary)" />}
-            {invited && <EmailIcon width="20px" height="20px" fill="var(--cpd-color-icon-accent-primary)" />}
-            {isMention && <MentionIcon width="20px" height="20px" fill="var(--cpd-color-icon-accent-primary)" />}
+            {hasVideoCall && <VideoCallIcon width="20px" height="20px" fill="var(--cpd-color-text-link-external)" />}
+            {invited && <EmailIcon width="20px" height="20px" fill="var(--cpd-color-text-link-external)" />}
+            {isMention && <MentionIcon width="20px" height="20px" fill="var(--cpd-color-text-link-external)" />}
             {(isMention || isNotification) && <UnreadCounter count={count || null} />}
             {isActivityNotification && <Unread />}
             {muted && <NotificationOffIcon width="20px" height="20px" fill="var(--cpd-color-icon-tertiary)" />}

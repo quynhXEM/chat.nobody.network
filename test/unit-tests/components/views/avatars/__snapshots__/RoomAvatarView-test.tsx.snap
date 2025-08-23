@@ -360,7 +360,7 @@ exports[`<RoomAvatarView /> should render the ONLINE presence 1`] = `
     <svg
       aria-label="Online"
       class="mx_RoomAvatarView_PresenceDecoration"
-      color="var(--cpd-color-icon-accent-primary)"
+      color="var(--cpd-color-text-link-external)"
       fill="currentColor"
       height="8px"
       viewBox="0 0 8 8"
